@@ -1,5 +1,28 @@
 .will-suit {
+  position: relative;
   margin-bottom: 128px;
+  &::before {
+    position: absolute;
+    content:'';
+    top: -270px;
+    right: 150px;
+    background-image: url('../../img/back-img-2.png');
+    width: 346px;
+    height: 355px;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &::after {
+    position: absolute;
+    content:'';
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%,-50%);
+    background-image: url('../../img/back-img.png');
+    width: 572px;
+    height: 1261px;
+    z-index: -1;
+  }
   &__list {
     display: flex;
     flex-wrap: wrap;

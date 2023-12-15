@@ -1,0 +1,120 @@
+.section-news {
+  margin-bottom: 88px;
+  &__title {
+    position: relative;
+    margin-bottom: 38px;
+    padding-bottom: 12px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 200px;
+      height: 11px;
+      background-image: url('../../img/title-news.svg');
+      background-repeat: no-repeat;
+    }
+  }
+  &__inner {
+
+  }
+}
+
+.news-content {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  column-gap: 24px;
+  row-gap: 44px;
+  margin-bottom: 64px;
+
+  .post {
+    grid-column: 4 span;
+  }
+}
+
+.blog-info {
+  grid-column: 5/13;
+  grid-row: 3/4;
+
+  position: relative;
+  background-color: #BC781E;
+  padding: 64px 50px;
+  display: flex;
+  border-radius: var(--bor-rad);
+  overflow: hidden;
+  background-image: url('../../img/blog-info-img.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  // &:before {
+  //   position: absolute;
+  //   content: '';
+  //   bottom: 0;
+  //   left: 0;
+  // }
+
+  &__content {
+    color: var(--white);
+  }
+  &__title {
+    width: 370px;
+    font-size: 40px;
+    @extend %mul-600;
+    line-height: 48px;
+    margin-bottom: 36px;
+  }
+  &__text {
+    width: 295px;
+    margin-bottom: 60px;
+    @extend %nato-500;
+    line-height: 26px;
+  }
+  &__link {
+    border: none;
+  }
+  &__img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 386px;
+    height: 480px;
+     img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     }
+  }
+}
+
+
+
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__list {
+    display: flex;
+  }
+  &__list-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+  &__list-link {
+    min-width: 52px;
+    height: 52px;
+    padding: 12px 14px;
+    @extend %mul-800;
+    font-size: 24px;
+    line-height: 32px;
+    color: var(--black);
+    border-radius: 20px;
+  }
+  &__list-link--active {
+    background-color: var(--white);
+  }
+}

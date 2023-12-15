@@ -21,7 +21,6 @@ const uglify = require("gulp-uglify-es").default;
 const imagemin = require("gulp-imagemin");
 const gutil = require("gulp-util");
 const ftp = require("vinyl-ftp");
-const typograf = require("gulp-typograf");
 
 const fonts = () => {
   return src("./src/fonts/ttf/*.ttf")
@@ -37,15 +36,6 @@ const fontDest = () => {
   return src("./src/fonts/*.woff2")
   .pipe(dest(["./app/fonts/"]));
 }
-// const fonts = () => {
-//   return src("./src/fonts/**.ttf")
-//   .pipe(ttf2woff2())
-//   .pipe(dest("./app/fonts/"))
-// };
-
-// return возвращает что-то, а функция scr - получает какой-то файл или файлы, котоыре нужно обработать
-// .pipe это функция,которая как бы труба, через которую пропускаются все файлы, что мы получили
-// Если src получает файлы, то dest - куда-то сохраняет их
 
 // scss styles
 const styles = () => {
@@ -84,11 +74,7 @@ const htmlInclude = () => {
         basepath: "@file",
       })
     )
-    .pipe(
-      typograf({
-        locale: ["ru", "en-US"],
-      })
-    )
+
     .pipe(dest("./app"))
     .pipe(browserSync.stream());
 };

@@ -9,14 +9,16 @@
 //Большие компоненты страницы
 @import "./components/header";
 @import "./components/hero";
+@import "./components/locstion-place";
 @import "./components/news-events";
 @import "./components/will-suit";
+@import "./components/free-cours";
 @import "./components/contact";
 // @import "./components/";
 @import "./components/footer";
 
 
 //Маленькие компоненты
-// @import "./components/";
+@import "./components/news-secrion";
 
 @import "media";

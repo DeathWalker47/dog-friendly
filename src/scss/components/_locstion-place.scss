@@ -1,0 +1,102 @@
+.location-place {
+  position: relative;
+  display: block;
+  margin-bottom: 190px;
+  &__inner {
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: max(15px, calc((100% - 1326px) / 2));
+  }
+  &__left {
+    width: 530px;
+    margin-right: auto;
+  }
+  &__title {
+    margin-bottom: 44px;
+    padding-bottom: 12px;
+    border-bottom: 3px solid var(--bright-yellow);
+    @extend %mul-600;
+    font-size: 40px;
+    line-height: 48px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 44px;
+  }
+  &__link {
+
+  }
+  &__right {
+    position: relative;
+    max-width: 775px;
+    width: 100%;
+  }
+  &__map {
+
+  }
+}
+
+.map-place {
+    position: relative;
+  &__img {
+    position: absolute;
+    top: -260px;
+    width: 1177px;
+    height: auto;
+  }
+}
+.map-circle {
+  position: absolute;
+  width: 401px;
+  height: 401px;
+  top: 45px;
+  left: 148px;
+}
+.map-dots {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 293px;
+  height: 293px;
+  padding: 55px;
+  border-radius: 100%;
+
+  background: rgba(255, 255, 255, 0.10);
+  box-shadow: -5px 6px 17px 0px rgba(122, 122, 122, 0.05), -21px 24px 32px 0px rgba(122, 122, 122, 0.05), -47px 54px 43px 0px rgba(122, 122, 122, 0.03), -83px 96px 51px 0px rgba(122, 122, 122, 0.01), -130px 150px 56px 0px rgba(122, 122, 122, 0.00);
+  backdrop-filter: blur(10px);
+  &__dot {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--black);
+    background-color: var(--white);
+    border: 6px solid var(--bright-yellow);
+    border-radius: 100%;
+    width: 64px;
+    height: 64px;
+    @extend %nato-800;
+    font-size: 19.742px;
+    line-height: 32.08px;
+  }
+  &__dot--big {
+    bottom: 55px;
+    right: 58px;
+    border: 9px solid var(--bright-yellow);
+    width: 113px;
+    height: 113px;
+    font-size: 28.378px;
+    line-height: 46.115px;
+  }
+  &__dot--medium {
+    top: 33px;
+    right: 113px;
+  }
+  &__dot--small {
+    top: 125px;
+    left: 43px;
+  }
+}
