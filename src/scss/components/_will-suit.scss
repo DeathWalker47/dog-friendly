@@ -1,0 +1,75 @@
+.will-suit {
+  margin-bottom: 128px;
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+  }
+  &__item {
+
+  }
+}
+
+.suit {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 416px;
+  height: 458px;
+  padding: 40px;
+  border-radius: var(--bor-rad);
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+  background-size: auto;
+  &--dark {
+    background-color: var(--dark);
+    color: var(--white);
+    background-image: url('../../img/dog-1.png');
+  }
+  &--white {
+    background-color: var(--white);
+    color: var(--dark);
+    background-image: url('../../img/dog-2.png');
+  }
+  &--yellow {
+    background-color: var(--bright-yellow);
+    color: var(--dark);
+    background-image: url('../../img/dog-3.png');
+  }
+  &__title {
+    @extend %mul-600;
+    font-size: 40px;
+    line-height: 48px; /* 120% */
+    margin-bottom: 24px;
+  }
+  &__text {
+    font-size: 20px;
+    line-height: 32px; /* 160% */
+  }
+  &__btn {
+    margin-top: auto;
+    border:none;
+  }
+  &__list {
+    padding-left: 30px;
+    width: 305px;
+  }
+  &__item {
+    position: relative;
+    @extend %nato-500;
+    font-size: 20px;
+    line-height: 32px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 11px;
+      left: -20px;
+      width: 5px;
+      height: 5px;
+      background-color:var(--dark);
+      border-radius: 100%;
+    }
+  }
+}
+

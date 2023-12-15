@@ -13,7 +13,11 @@ html {
   margin: 0;
   min-width: 320px;
   min-height: 100%;
+  @extend %nato-500;
   font-size: 16px;
+  line-height: 28px;
+  color: var(--dark);
+  background-color: var(--back-color);
 }
 
 //Класс, для того, чтоб страница не скроллилась после открытия меню
@@ -33,13 +37,17 @@ html {
 }
 
 .container {
-  max-width: 1230px;
+  max-width: 1326px;
   padding: 0 15px;
   margin: 0 auto;
 }
 
-.title {
-  // color: $title;
+.title-page {
+  position: relative;
+  @extend %mul-800;
+  font-size: 40px;
+  line-height: 48px;
+  color: var(--black);
 }
 
 .visually-hidden {
@@ -93,4 +101,52 @@ html {
 
 .page--ios .dis-scroll {
   position: relative;
+}
+
+
+
+.btn-link {
+  @extend %nato-500;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 44px;
+  line-height: 26px;
+  text-align: center;
+  border-radius: var(--bor-rad);
+  border: 1px solid transparent;
+  // transition: color .3s ease-in-out, background-color .3s ease-in-out;
+
+  // &:hover {
+  //   color:var(--dark);
+  //   background-color: var(--white);
+  // }
+}
+
+.btn-black {
+  background-color: var(--dark);
+  color:var(--white);
+}
+
+.btn-white {
+  background-color: var(--white);
+  color:var(--dark);
+  border: 1px solid var(--dark);
+}
+
+
+.input-elem {
+  border-radius: var(--bor-rad);
+  border: 1px solid var(--light-gray);
+  background-color: var(--white);
+  color: var(--dark);
+  padding: 24px 20px;
+  @extend %nato-500;
+  font-size: 16px;
+  line-height: 16px;
+  &::placeholder {
+    color: var(--gray);
+    font-size: 16px;
+    line-height: 16px;
+  }
 }

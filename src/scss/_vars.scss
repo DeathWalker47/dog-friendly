@@ -1,10 +1,66 @@
+:root {
+  --black: #000;
+  --dark: #222222;
+  --white: #ffffff;
+  --gray: #9E9E9E;
+  --light-gray: #D9D9D9;
+  --bright-yellow: #D7DB2D;
+  --back-color: #F6F6F5;
+  --dark-gray: #6F6F6F;
+  --text-color: #414141;
+  --breadcrumbs-color: #8488EA;
+  --menu-color: #333333;
+  --orange-color:#BC781E;
+  --bor-rad: 24px;
+}
 
-// %burger-width{
-//   width: 30px;
-// }
-// %burger-height{
-//   height: 30px;
-// }
-// %burger-line-height{
-//   height: 2px;
-// }
+%nato-400 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+%nato-500 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+%nato-600 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+%nato-800 {
+  font-family: "Noto Sans", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+%mul-400 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+%mul-500 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+%mul-600 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+%mul-800 {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+%mul-ital {
+  font-family: "Mulish", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
