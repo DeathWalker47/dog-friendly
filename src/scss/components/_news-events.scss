@@ -24,8 +24,9 @@
   &__img-box {
     border-radius: var(--bor-rad);
     overflow: hidden;
-    width: 368px;
-    height: 282px;
+    max-width: 368px;
+    max-height: 282px;
+    height: auto;
     margin-bottom: 14px;
   }
   &__img {

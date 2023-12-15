@@ -2,9 +2,15 @@
   margin-bottom: 190px;
 }
 
+.swiper-slide {
+  width: 100%;
+}
+
 .hero-slider {
   padding: 140px 0 70px;
-  width: 1440px;
+  background-size:cover;
+  background-repeat: no-repeat;
+  // width: 1440px;
   height: 755px;
   border-radius:var(--bor-rad);
   &__content {
@@ -57,6 +63,7 @@
     }
   }
   &__btn {
+    border: none;
   }
 }
 
