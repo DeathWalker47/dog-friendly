@@ -4,17 +4,16 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    background-image: url('../../img/back-contact-img.png');
+    transform: translate(-50%, -50%);
+    background-image: url("../img/back-contact-img.png");
     background-repeat: no-repeat;
     height: 2236px;
     width: 915px;
     z-index: -1;
   }
-
 }
 
 .contact-content {
@@ -26,11 +25,10 @@
   border-radius: var(--bor-rad);
   &__inner {
     display: flex;
-    flex-wrap: wrap;
   }
   &__left {
     display: flex;
-    flex-direction: column
+    flex-direction: column;
   }
   &__title {
     width: 526px;
@@ -53,14 +51,13 @@
     @extend %mul-600;
   }
   &__form {
-
   }
 }
 .contact-form {
   max-width: 606px;
   width: 100%;
   padding: 40px;
-  background-color:var(--white);
+  background-color: var(--white);
   border-radius: var(--bor-rad);
   &__label {
     display: flex;
@@ -93,7 +90,7 @@
   @include custom-checkbox;
 
   &__field {
-    &:checked+.custom-checkbox__content::after  {
+    &:checked + .custom-checkbox__content::after {
       background-color: var(--bright-yellow);
     }
   }
@@ -107,7 +104,7 @@
       height: 20px;
     }
     &::after {
-      background-image: url('../../img/chek.png');
+      background-image: url("../img/chek.png");
       background-size: 12px 8px;
       background-repeat: no-repeat;
       width: 20px;

@@ -3,7 +3,6 @@
   &__items {
   }
   &__item {
-
   }
 }
 .cours-article {
@@ -28,15 +27,19 @@
     align-items: center;
   }
   &__content--orange {
-    background-color:var(--orange-color);
-    h2, p, span {
+    background-color: var(--orange-color);
+    h2,
+    p,
+    span {
       color: var(--white);
     }
   }
   &__content--yellow {
-    background-color:var(--bright-yellow);
-    h2, p, span {
-      color:var(--black);
+    background-color: var(--bright-yellow);
+    h2,
+    p,
+    span {
+      color: var(--black);
     }
   }
   &__box-text {
@@ -53,27 +56,26 @@
   &__title--del {
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: -110px;
       left: 0;
-      background-image: url('../../img/free-title.svg');
+      background-image: url("../img/free-title.svg");
       width: 250px;
       height: 90px;
       background-repeat: no-repeat;
     }
     &::after {
       position: absolute;
-      content: '';
+      content: "";
       top: 5px;
       left: -15px;
-      background-image: url('../../img/del-title.svg');
+      background-image: url("../img/del-title.svg");
       width: 230px;
       height: 50px;
       background-repeat: no-repeat;
     }
   }
   &__title--under {
-
   }
   &__text {
     display: block;
@@ -86,4 +88,3 @@
     @extend %nato-800;
   }
 }
-

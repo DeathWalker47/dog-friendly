@@ -122,7 +122,11 @@ html {
   //   background-color: var(--white);
   // }
 }
-
+.title-block {
+  @extend %mul-600;
+  font-size: 40px;
+  line-height: 48px;
+}
 .btn-black {
   background-color: var(--dark);
   color:var(--white);

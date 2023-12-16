@@ -8,11 +8,11 @@
 
 .hero-slider {
   padding: 140px 0 70px;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
   // width: 1440px;
   height: 755px;
-  border-radius:var(--bor-rad);
+  border-radius: var(--bor-rad);
   &__content {
     display: flex;
     flex-direction: column;
@@ -30,10 +30,10 @@
 
     &::before {
       position: absolute;
-      content:'';
+      content: "";
       top: -7px;
       right: -25px;
-      background-image: url('../../img/line-title-top.svg');
+      background-image: url("../img/line-title-top.svg");
       width: 41px;
       height: 41px;
       background-repeat: no-repeat;
@@ -51,10 +51,10 @@
     line-height: 32px;
     &::before {
       position: absolute;
-      content:'';
+      content: "";
       bottom: 0;
       right: 0;
-      background-image: url('../../img/underline-title-top.svg');
+      background-image: url("../img/underline-title-top.svg");
       width: 270px;
       height: 10px;
       background-repeat: no-repeat;

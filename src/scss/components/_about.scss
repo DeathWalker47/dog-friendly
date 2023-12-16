@@ -1,0 +1,345 @@
+.about {
+  padding-top: 48px;
+  &__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 108px;
+  }
+  &__top-content {
+    max-width: 636px;
+  }
+  &__top-title {
+    position: relative;
+    width: 210px;
+    @extend %mul-600;
+    font-size: 40px;
+    line-height: 48px;
+    margin-bottom: 36px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+      background-image: url('../../img/title-elem.svg');
+      background-repeat: no-repeat;
+      width: 223px;
+      height: 67px;
+      z-index: -1;
+    }
+  }
+  &__top-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+  &__top-image {
+    position: relative;
+    width: 526px;
+    height: 640px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+    }
+    &::before {
+      background-image: url('../../img/about-elem-1.png');
+      width: 80px;
+      height: 72px;
+      top: 85px;
+      right: -30px;
+    }
+    &::after {
+      background-image: url('../../img/about-elem-2.png');
+      width: 145px;
+      height: 123px;
+      top: 57%;
+      left: -30px;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  &__img-box {
+    position: absolute;
+    width: 526px;
+    height: 640px;
+    border-radius: var(--bor-rad);
+    background-color: var(--white);
+    transform: rotate(-8deg);
+    z-index: -1;
+  }
+}
+
+.objectives {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+  }
+  &__btns {
+
+  }
+}
+.objectives-slider {
+  margin-bottom: 128px;
+}
+
+.objective {
+  height: 100%;
+  &__link {
+    display: block;
+    height: 100%;
+    padding: 24px;
+    background-color: var(--white);
+    border-radius: var(--bor-rad);
+    overflow: hidden;
+    color: var(--dark);
+    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+
+
+    &:hover {
+      background-color: var(--orange-color);
+      color: var(--white);
+      svg {
+        fill: var(--white);
+      }
+    }
+  }
+  &__img-box {
+    width: 368px;
+    height: 282px;
+    margin-bottom: 20px;
+    border-radius: var(--bor-rad);
+    overflow: hidden;
+  }
+  svg {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+
+    fill: var(--orange-color);
+    transition: fill .3s ease-in;
+  }
+  &__text {
+    @extend %mul-600;
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+  }
+}
+.dog-team {
+  margin-bottom: 146px;
+  &__title {
+    position: relative;
+    padding-bottom: 14px;
+    margin-bottom: 26px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      width: 467px;
+      height: 14px;
+      background-image: url('../../img/new-title-elem.png');
+      background-repeat: no-repeat;
+    }
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 24px;
+    row-gap: 40px;
+  }
+  &__item {
+    grid-column: 4 span;
+  }
+}
+.person-card {
+  &__image {
+    width: 416px;
+    height: 416px;
+    border-radius: var(--bor-rad);
+    overflow: hidden;
+    background-color: var(--light-gray);
+    margin-bottom: 24px;
+  }
+  &__name {
+    @extend %mul-600;
+    font-size: 24px;
+    line-height: 32px; /* 133.333% */
+    margin-bottom: 10px;
+  }
+  &__position {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  &__btn {
+    width: 100%;
+  }
+}
+
+.life-dog {
+  margin-bottom: 128px;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 68px;
+  }
+
+  &__btns {
+
+  }
+  &__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 416px;
+    height: 460px;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: var(--bor-rad);
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+    }
+  }
+
+  &__item-title {
+    margin-bottom: 24px;
+    @extend %mul-600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__item-text {
+    line-height: 26px;
+    margin-bottom: auto;
+  }
+  &__item-link {
+    width: 180px;
+    border: 1px solid var(--dark);
+  }
+
+  &__item--dog {
+    &::before {
+      background-image: url('../../img/about-life-dog-img.png');
+      width: 219px;
+      height: 252px;
+      bottom: 0;
+      right: 0;
+    }
+
+  }
+  &__item--crumbs {
+     &::before {
+      background-image: url('../../img/life-slider-img-2.png');
+      width: 81px;
+      height: 57px;
+      bottom: -30px;
+      right: 0px;
+    }
+  }
+  &__item--line {
+     &::before {
+      background-image: url('../../img/life-slider-img-1.png');
+      width: 117px;
+      height: 48px;
+      top: -20px;
+      right: 30px;
+    }
+  }
+  &__box-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &__link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.life-dog-slider {
+  margin-bottom: 36px;
+}
+
+
+.partners {
+  margin-bottom: 128px;
+  &__title {
+    margin-bottom: 60px;
+    padding-bottom: 26px;
+    position: relative;
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      background-image: url('../../img/duble-line-title.png');
+      width: 364px;
+      height: 20px;
+      background-repeat: no-repeat;
+    }
+  }
+  &__box-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+.partners-list {
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  gap: 24px;
+  margin-bottom: 63px;
+  &__item {
+    padding: 10px 22px;
+    grid-column: 3 span;
+  }
+  &__box-img {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 43px;
+    max-width: 261px;
+    max-height: 136px;
+  }
+  &__img {
+    width: auto;
+    height: auto;
+    object-fit: cover;
+  }
+  &__text {
+    margin-bottom: 10px;
+    @extend %mul-600;
+    font-size: 24px;
+    line-height: 32px;
+  }
+  &__address {
+    @extend %nato-500;
+    display: block;
+    margin-bottom: 13px;
+    line-height: 26px;
+  }
+  &__link {
+    padding-right: 25px;
+    color: var(--breadcrumbs-color);
+    background-image: url('../../img/arrow-up-right.svg');
+    background-repeat: no-repeat;
+    background-position: center right;
+  }
+}
+

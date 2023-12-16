@@ -4,7 +4,6 @@
   &__inner {
     display: flex;
   }
-
 }
 .nav {
   margin-left: auto;
@@ -14,7 +13,6 @@
     padding: 19px 44px;
     background-color: var(--white);
     border-radius: var(--bor-rad);
-
   }
   &__item {
     &:not(:last-child) {
@@ -30,19 +28,18 @@
   position: relative;
   padding-right: 22px;
   cursor: pointer;
-  
+
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     top: 50%;
     transform: translateY(-50%);
     right: 0;
     width: 12px;
     height: 6px;
-    background-image: url('../../img/menu-arr.svg');
+    background-image: url("../img/menu-arr.svg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
 }
-
