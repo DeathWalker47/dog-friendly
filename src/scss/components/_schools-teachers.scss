@@ -2,10 +2,9 @@
 .schools-info {
   padding: 95px 0;
   margin-bottom: 80px;
-  height: 950px;
+  min-height: 950px;
   border-radius: var(--bor-rad);
   overflow: hidden;
-  background-image: url('../../img/school-img.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
