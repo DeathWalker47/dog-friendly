@@ -1,0 +1,143 @@
+
+.schools-info {
+  padding: 95px 0;
+  margin-bottom: 80px;
+  height: 950px;
+  border-radius: var(--bor-rad);
+  overflow: hidden;
+  background-image: url('../../img/school-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  &__content {
+    width: 474px;
+    color: var(--white);
+  }
+  &__title {
+    position: relative;
+    margin-bottom: 36px;
+    @extend %mul-600;
+    font-size: 64px;
+    line-height: 72px;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+
+    }
+    &::before {
+      background-image: url('../../img/school-img-title-1.svg');
+      top: -10px;
+      right: 112px;
+      width: 41px;
+      height: 41px;
+    }
+    &::after {
+      background-image: url('../../img/school-img-title-2.svg');
+      width: 271px;
+      height: 8px;
+      bottom: -6px;
+      right: 0;
+    }
+  }
+  &__descr {
+    font-size: 20px;
+    line-height: 32px;
+  }
+}
+
+.schools-teachers {
+  .about {
+    &::before {
+      position: absolute;
+      content: '';
+      top: 47%;
+      left: 7%;
+      background-image: url('../../img/news-back-img.png');
+      background-repeat: no-repeat;
+      background-position: 50% 0%;
+      width: 913px;
+      z-index: -1;
+      height: 2560px;
+    }
+  }
+  .about__top-title {
+    width: 480px;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--bright-yellow);
+    &::before {
+      display: none;
+    }
+    span {
+      display: block;
+    }
+  }
+}
+
+.useful-materials {
+  position: relative;
+  &::before,
+  &::after {
+    position: absolute;
+    content: '';
+    width: 347px;
+    height: 357px;
+    background-image: url('../../img/back-img-2.png');
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+  &::before {
+    top: 0;
+    right: -60px;
+  }
+  &::after {
+    bottom: -160px;
+    left: -100px;
+  }
+  margin-bottom: 128px;
+  &__title {
+    max-width: 584px;
+    margin-bottom: 56px;
+
+  }
+  &__list {
+
+  }
+}
+
+.useful-list {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+  &__item {
+    grid-column: 4 span;
+  }
+}
+
+.materials {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  height: 308px;
+  padding: 40px;
+  background-color: var(--white);
+  border-radius: var(--bor-rad);
+  &__title {
+    margin-bottom: auto;
+    @extend %mul-600;
+    font-size: 24px;
+    line-height: 32px;
+    max-width: 300px;
+  }
+  &__link {
+
+  }
+  &__image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}
