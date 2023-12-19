@@ -1,0 +1,505 @@
+.info-page {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+
+  &__top-text {
+    max-width: 530px;
+  }
+
+  &__title {
+    position: relative;
+    @extend %mul-600;
+    font-size: 40px;
+    line-height: 48px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      bottom: 0;
+      left: 0;
+      background-repeat: no-repeat;
+    }
+
+  }
+
+  &__descr {
+    @extend %nato-500;
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__right {
+    max-width: 636px;
+  }
+
+  &__right-text {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  &__right-img {
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__list {
+    margin-bottom: 128px;
+  }
+}
+
+.loalg {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+//Разные украшения для заголовков
+
+.life-with-a-dog {
+  &__title {
+    padding-bottom: 23px;
+
+    &::before {
+      background-image: url('../../img/life-list-title-elem.png');
+      width: 510px;
+      height: 17px;
+    }
+  }
+}
+
+.health-care {
+  &__title {
+    padding-bottom: 20px;
+    margin-bottom: 10px;
+
+    &::before {
+      background-image: url('../../img/health-care-title.png');
+      width: 339px;
+      height: 15px;
+    }
+  }
+}
+
+.education-and-training {
+  &__list {
+    margin-bottom: 128px;
+  }
+
+  &__title {
+    margin-bottom: 15px;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-image: url('../../img/education-and-training-title.svg');
+      top: 50%;
+      left: 45%;
+      transform: translate(-50%, -50%);
+      width: 495px;
+      height: 70px;
+      z-index: -1;
+    }
+  }
+}
+
+.how-get-pet {
+  &__title {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+    &::before {
+      background-image: url('../../img/how-get-pet-title.png');
+      bottom: 0;
+      left: 0;
+      width: 443px;
+      height: 20px;
+    }
+  }
+
+  &__list {
+    margin-bottom: 128px;
+  }
+}
+
+.traveling-with-dog {
+  &__title {
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+
+    &::before {
+      background-image: url('../../img/travel-title.png');
+      bottom: 0;
+      left: 0;
+      width: 495px;
+      height: 12px;
+    }
+  }
+}
+
+.instructions-and-guides {
+  &__title {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+
+    &::before {
+      background-image: url('../../img/instructions-and-guides-title.png');
+      bottom: 0;
+      left: 0;
+      width: 482px;
+      height: 18px;
+    }
+  }
+}
+
+.cart-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+
+  &__item {
+    &--big {
+      grid-column: 8 span;
+    }
+
+    &--small {
+      grid-column: 4 span;
+    }
+  }
+}
+
+.cart-item {
+  position: relative;
+  height: 467px;
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--white);
+  border-radius: var(--bor-rad);
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    z-index: -1;
+    bottom: 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 395px;
+    padding: 40px;
+  }
+
+  &__title {
+    @extend %mul-600;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 24px;
+    color: var(--black);
+  }
+
+  &__descr {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 26px;
+    color: var(--black);
+  }
+
+  &__text-info {
+    @extend %nato-800;
+    font-size: 16px;
+    line-height: 26px;
+    display: inline-block;
+    margin-bottom: auto;
+  }
+
+  &__link {
+    border-color:transparent;
+  }
+
+  &__right {
+    position: relative;
+    margin-top: auto;
+
+  }
+  &__right-image {
+    max-width: 300px;
+    max-height: 450px;
+    padding-bottom: 40px;
+    padding-right: 20px;
+    padding-top: 20px;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.cart-item--big-one {
+  &::before {
+    background-image: url('../../img/life-list-big-2.png');
+    width: 503px;
+    height: 467px;
+    right: 0;
+  }
+}
+
+.cart-item--orange {
+  background-color: var(--orange-color);
+
+  h2,
+  p,
+  span {
+    color: var(--white);
+  }
+}
+
+.cart-item--yellow {
+  background-color: var(--bright-yellow);
+}
+
+.cart-item--big-two {
+  &::before {
+    background-image: url('../../img/life-list-big-1.png');
+    width: 1182px;
+    height: 954px;
+    bottom: -105%;
+    background-size: auto;
+    left: 18%;
+  }
+}
+
+.cart-item--big-three {
+  &::before {
+    background-image: url('../../img/life-list-big-3.png');
+    width: 1108px;
+    height: 448px;
+    right: -47%;
+    bottom: 30px;
+  }
+}
+
+.cart-item--black {
+  background-color: var(--dark);
+  .cart-item__link  {
+    border-color: var(--white);
+  }
+  h2,
+  p,
+  span {
+    color: var(--white);
+  }
+}
+
+.health-care {
+  &__list {
+    margin-bottom: 128px;
+  }
+}
+
+
+.blog-list {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 24px;
+  row-gap: 36px;
+
+  &__item {
+    position: relative;
+
+    &::before {
+      position: absolute;
+      content: '';
+      background-repeat: no-repeat;
+      background-size: cover;
+      z-index: 1;
+    }
+
+    &--line {
+      &::before {
+        background-image: url('../../img/life-slider-img-1.png');
+        width: 117px;
+        height: 48px;
+        top: -16px;
+        right: 35px;
+      }
+    }
+
+    &--jellyfish {
+      &::before {
+        background-image: url('../../img/about-elem-1.png');
+        width: 58px;
+        height: 52px;
+        bottom: 72px;
+        right: -25px;
+      }
+    }
+
+    &--parasites {
+      &::before {
+        background-image: url('../../img/parasites-img.png');
+        width: 62px;
+        height: 70px;
+        top: -30px;
+        right: -21px;
+      }
+    }
+
+    &--curl {
+      &::before {
+        background-image: url('../../img/curl-img.png');
+        width: 64px;
+        height: 40px;
+        bottom: -5px;
+        right: -15px;
+      }
+    }
+
+    &--crumbs {
+      &::before {
+        background-image: url('../../img/life-slider-img-2.png');
+        width: 81px;
+        height: 57px;
+        top: -18px;
+        right: 26px;
+      }
+    }
+
+    &--flourish {
+      &::before {
+        background-image: url('../../img/flourish-img.svg');
+        width: 33px;
+        height: 60px;
+        bottom: 118px;
+        right: -16px;
+      }
+    }
+
+    &--bagel {
+      &::before {
+        background-image: url('../../img/bagel-img.svg');
+        width: 57px;
+        height: 66px;
+        top: -27px;
+        right: 10px;
+      }
+    }
+
+    &--dots {
+      &::before {
+        background-image: url('../../img/dots-img.svg');
+        width: 52px;
+        height: 55px;
+        bottom: 80px;
+        right: -22px;
+      }
+    }
+
+    &--framework {
+      &::before {
+        background-image: url('../../img/framework-img.svg');
+        width: 60px;
+        height: 53px;
+        top: -14px;
+        right: 4px;
+      }
+    }
+
+    &--ribbon {
+      &::before {
+        background-image: url('../../img/ribbon-img.svg');
+        width: 118px;
+        height: 31px;
+        top: -16px;
+        right: 9px;
+      }
+    }
+  }
+
+  &__item--small {
+    grid-column: 4 span;
+  }
+
+  &__item--big {
+    grid-column: 8 span;
+  }
+
+  &__item--full {
+    grid-column: 12 span;
+
+    .blog-post__content {
+      max-width: 555px;
+    }
+
+    .blog-post__title {
+      font-size: 32px;
+      line-height: 42px;
+    }
+
+    .blog-post__text {
+      max-width: 395px;
+      font-size: 20px;
+      line-height: 32px;
+    }
+
+    .blog-post__image {
+      max-width: 678px;
+    }
+  }
+}
+
+.blog-post {
+  position: relative;
+  border-radius: var(--bor-rad);
+  overflow: hidden;
+  background-color: var(--white);
+  height: 458px;
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__content {
+    padding: 40px;
+    max-width: 395px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  &__title {
+    @extend %mul-600;
+    margin-bottom: 24px;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: auto;
+  }
+
+  &__image {
+    max-width: 415px;
+  }
+  &__btn-link {
+    cursor: pointer;
+  }
+}

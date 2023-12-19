@@ -50,16 +50,23 @@
     background-color: var(--dark);
     color: var(--white);
     background-image: url("../img/dog-1.png");
+    .suit__btn {
+      border-color: var(--white);
+    }
   }
   &--white {
     background-color: var(--white);
     color: var(--dark);
     background-image: url("../img/dog-2.png");
+
   }
   &--yellow {
     background-color: var(--bright-yellow);
     color: var(--dark);
     background-image: url("../img/dog-3.png");
+    .suit__btn {
+      border-color: transparent;
+    }
   }
   &__title {
     @extend %mul-600;
@@ -73,7 +80,6 @@
   }
   &__btn {
     margin-top: auto;
-    border: none;
   }
   &__list {
     padding-left: 30px;

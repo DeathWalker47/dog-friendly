@@ -21,6 +21,13 @@
   }
   &__link {
     color: var(--menu-color);
+    transition: all .3s linear;
+    &:hover {
+      color: var(--black);
+    }
+  }
+  &__link--active {
+    @extend %nato-800;
   }
 }
 

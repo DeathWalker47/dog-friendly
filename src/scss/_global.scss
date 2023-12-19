@@ -127,15 +127,29 @@ html {
   font-size: 40px;
   line-height: 48px;
 }
+
+
 .btn-black {
   background-color: var(--dark);
   color:var(--white);
+  border-color: var(--dark);
+  transition:  background-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+  &:hover {
+    background-color: var(--white);
+    color:var(--dark);
+    border-color:var(--dark);
+  }
 }
 
 .btn-white {
   background-color: var(--white);
   color:var(--dark);
   border: 1px solid var(--dark);
+  transition:  background-color .3s ease-in-out, color .3s ease-in-out, background-color .3s ease-in-out;
+  &:hover {
+    background-color: var(--dark);
+    color:var(--white);
+  }
 }
 
 

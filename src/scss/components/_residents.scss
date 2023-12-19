@@ -9,17 +9,16 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       width: 184px;
       height: 12px;
       background-repeat: no-repeat;
-      background-image: url('../../img/residents-title-elem.png');
+      background-image: url("../img/residents-title-elem.png");
       bottom: 0;
       left: 0;
     }
   }
   &__list {
-
   }
 }
 
@@ -34,8 +33,8 @@
 
       &::before {
         position: absolute;
-        content: '';
-        background-image: url('../../img/residents-img-2-elem.png');
+        content: "";
+        background-image: url("../img/residents-img-2-elem.png");
         width: 45px;
         height: 45px;
         top: 16px;
@@ -47,7 +46,6 @@
   }
 }
 
-
 .accardeon {
   position: relative;
   display: flex;
@@ -57,17 +55,17 @@
 
   &::before {
     position: absolute;
-    content:'';
+    content: "";
     top: -46%;
     right: 100px;
     z-index: -1;
-    background-image: url('../../img/back-img-2.png');
+    background-image: url("../img/back-img-2.png");
     width: 347px;
     height: 356px;
   }
   &__item {
     padding: 30px 40px;
-    background-color:var(--white);
+    background-color: var(--white);
     border-radius: var(--bor-rad);
   }
   &__item--open {
@@ -91,7 +89,7 @@
     color: var(--black);
   }
   &__box {
-    transition: transform .2s linear;
+    transition: transform 0.2s linear;
   }
   &__content {
     line-height: 26px;
@@ -100,7 +98,7 @@
     will-change: max-height;
     overflow: hidden;
     box-sizing: content-box;
-    transition: max-height .2s linear;
+    transition: max-height 0.2s linear;
   }
 }
 
@@ -120,11 +118,11 @@
     padding-bottom: 20px;
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 0;
       left: 0;
       background-repeat: no-repeat;
-      background-image: url('../../img/duble-line-title-3.svg');
+      background-image: url("../img/duble-line-title-3.svg");
       width: 540px;
       height: 18px;
     }
@@ -158,25 +156,22 @@
     color: var(--gray);
     border-radius: var(--bor-rad);
     background-color: var(--white);
-    transition: background-color .3s ease-in-out, color .3s ease-in-out;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     &:focus {
       background-color: var(--dark);
       color: var(--white);
     }
   }
   &__nav-btn--active {
-      background-color: var(--dark);
-      color: var(--white);
+    background-color: var(--dark);
+    color: var(--white);
   }
   &__content {
-
   }
   &__panel {
-
   }
 }
 .tabs-form {
-
   &__inner {
     display: flex;
     justify-content: space-between;
@@ -258,10 +253,8 @@
     margin-bottom: 8px;
   }
   &__field {
-
   }
   &__content {
     color: var(--text-color);
   }
 }
-
