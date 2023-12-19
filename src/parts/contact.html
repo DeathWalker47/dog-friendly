@@ -21,6 +21,7 @@
             Имя и Фамилия
             <input
               type="text"
+              required
               class="contact-form__input input-elem"
               placeholder="Ваше имя и Фамилия"
             />
@@ -29,6 +30,7 @@
             Телефон / ник в Телеграм
             <input
               type="text"
+              required
               class="contact-form__input input-elem"
               placeholder="Ваш телефон или ник"
             />
@@ -37,6 +39,7 @@
             E-mail
             <input
               type="email"
+              required
               class="contact-form__input input-elem"
               placeholder="Ваш E-mail"
             />
@@ -45,11 +48,12 @@
             Комментарий
             <textarea
               class="input-elem contact-form__input contact-form__textarea"
+              required
               placeholder="Ваш комментарий"
             ></textarea>
           </label>
           <label class="custom-checkbox contact-form__custom">
-            <input type="checkbox" class="custom-checkbox__field" />
+            <input type="checkbox" class="custom-checkbox__field" required/>
             <span class="custom-checkbox__content"
               >Даю согласие на обработку персональных данных</span
             >

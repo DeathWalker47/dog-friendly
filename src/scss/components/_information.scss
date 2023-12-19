@@ -18,12 +18,11 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       bottom: 0;
       left: 0;
       background-repeat: no-repeat;
     }
-
   }
 
   &__descr {
@@ -42,7 +41,6 @@
   }
 
   &__right-img {
-
     img {
       width: 100%;
       height: 100%;
@@ -67,7 +65,7 @@
     padding-bottom: 23px;
 
     &::before {
-      background-image: url('../../img/life-list-title-elem.png');
+      background-image: url("../img/life-list-title-elem.png");
       width: 510px;
       height: 17px;
     }
@@ -80,7 +78,7 @@
     margin-bottom: 10px;
 
     &::before {
-      background-image: url('../../img/health-care-title.png');
+      background-image: url("../img/health-care-title.png");
       width: 339px;
       height: 15px;
     }
@@ -97,8 +95,8 @@
 
     &::before {
       position: absolute;
-      content: '';
-      background-image: url('../../img/education-and-training-title.svg');
+      content: "";
+      background-image: url("../img/education-and-training-title.svg");
       top: 50%;
       left: 45%;
       transform: translate(-50%, -50%);
@@ -115,7 +113,7 @@
     padding-bottom: 20px;
 
     &::before {
-      background-image: url('../../img/how-get-pet-title.png');
+      background-image: url("../img/how-get-pet-title.png");
       bottom: 0;
       left: 0;
       width: 443px;
@@ -134,7 +132,7 @@
     padding-bottom: 12px;
 
     &::before {
-      background-image: url('../../img/travel-title.png');
+      background-image: url("../img/travel-title.png");
       bottom: 0;
       left: 0;
       width: 495px;
@@ -149,7 +147,7 @@
     padding-bottom: 20px;
 
     &::before {
-      background-image: url('../../img/instructions-and-guides-title.png');
+      background-image: url("../img/instructions-and-guides-title.png");
       bottom: 0;
       left: 0;
       width: 482px;
@@ -186,7 +184,7 @@
 
   &::before {
     position: absolute;
-    content: '';
+    content: "";
     background-repeat: no-repeat;
     z-index: -1;
     bottom: 0;
@@ -224,13 +222,12 @@
   }
 
   &__link {
-    border-color:transparent;
+    border-color: transparent;
   }
 
   &__right {
     position: relative;
     margin-top: auto;
-
   }
   &__right-image {
     max-width: 300px;
@@ -249,7 +246,7 @@
 
 .cart-item--big-one {
   &::before {
-    background-image: url('../../img/life-list-big-2.png');
+    background-image: url("../img/life-list-big-2.png");
     width: 503px;
     height: 467px;
     right: 0;
@@ -272,7 +269,7 @@
 
 .cart-item--big-two {
   &::before {
-    background-image: url('../../img/life-list-big-1.png');
+    background-image: url("../img/life-list-big-1.png");
     width: 1182px;
     height: 954px;
     bottom: -105%;
@@ -283,7 +280,7 @@
 
 .cart-item--big-three {
   &::before {
-    background-image: url('../../img/life-list-big-3.png');
+    background-image: url("../img/life-list-big-3.png");
     width: 1108px;
     height: 448px;
     right: -47%;
@@ -293,7 +290,7 @@
 
 .cart-item--black {
   background-color: var(--dark);
-  .cart-item__link  {
+  .cart-item__link {
     border-color: var(--white);
   }
   h2,
@@ -309,7 +306,6 @@
   }
 }
 
-
 .blog-list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -321,7 +317,7 @@
 
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       background-repeat: no-repeat;
       background-size: cover;
       z-index: 1;
@@ -329,7 +325,7 @@
 
     &--line {
       &::before {
-        background-image: url('../../img/life-slider-img-1.png');
+        background-image: url("../img/life-slider-img-1.png");
         width: 117px;
         height: 48px;
         top: -16px;
@@ -339,7 +335,7 @@
 
     &--jellyfish {
       &::before {
-        background-image: url('../../img/about-elem-1.png');
+        background-image: url("../img/about-elem-1.png");
         width: 58px;
         height: 52px;
         bottom: 72px;
@@ -349,7 +345,7 @@
 
     &--parasites {
       &::before {
-        background-image: url('../../img/parasites-img.png');
+        background-image: url("../img/parasites-img.png");
         width: 62px;
         height: 70px;
         top: -30px;
@@ -359,7 +355,7 @@
 
     &--curl {
       &::before {
-        background-image: url('../../img/curl-img.png');
+        background-image: url("../img/curl-img.png");
         width: 64px;
         height: 40px;
         bottom: -5px;
@@ -369,7 +365,7 @@
 
     &--crumbs {
       &::before {
-        background-image: url('../../img/life-slider-img-2.png');
+        background-image: url("../img/life-slider-img-2.png");
         width: 81px;
         height: 57px;
         top: -18px;
@@ -379,7 +375,7 @@
 
     &--flourish {
       &::before {
-        background-image: url('../../img/flourish-img.svg');
+        background-image: url("../img/flourish-img.svg");
         width: 33px;
         height: 60px;
         bottom: 118px;
@@ -389,7 +385,7 @@
 
     &--bagel {
       &::before {
-        background-image: url('../../img/bagel-img.svg');
+        background-image: url("../img/bagel-img.svg");
         width: 57px;
         height: 66px;
         top: -27px;
@@ -399,7 +395,7 @@
 
     &--dots {
       &::before {
-        background-image: url('../../img/dots-img.svg');
+        background-image: url("../img/dots-img.svg");
         width: 52px;
         height: 55px;
         bottom: 80px;
@@ -409,7 +405,7 @@
 
     &--framework {
       &::before {
-        background-image: url('../../img/framework-img.svg');
+        background-image: url("../img/framework-img.svg");
         width: 60px;
         height: 53px;
         top: -14px;
@@ -419,7 +415,7 @@
 
     &--ribbon {
       &::before {
-        background-image: url('../../img/ribbon-img.svg');
+        background-image: url("../img/ribbon-img.svg");
         width: 118px;
         height: 31px;
         top: -16px;
