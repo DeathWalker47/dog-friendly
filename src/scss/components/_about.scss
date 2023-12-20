@@ -128,8 +128,10 @@
   }
   &__text {
     @extend %mul-600;
+    margin-top: 12px;
     font-size: 24px;
-    line-height: 32px; /* 133.333% */
+    line-height: 32px;
+    min-height: 160px;
   }
 }
 .dog-team {
@@ -195,18 +197,16 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 68px;
+    margin-bottom: 40px;
   }
 
-  &__btns {
-  }
+
   &__item {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 416px;
-    height: 460px;
+    height: 380px;
     padding: 40px;
     background-color: var(--white);
     border-radius: var(--bor-rad);
@@ -230,16 +230,20 @@
   }
   &__item-link {
     width: 180px;
+    box-sizing: border-box;
     border: 1px solid var(--dark);
   }
 
   &__item--dog {
+    z-index: 1;
+    overflow: hidden;
     &::before {
       background-image: url("../img/about-life-dog-img.png");
       width: 219px;
       height: 252px;
       bottom: 0;
       right: 0;
+      z-index: -1;
     }
   }
   &__item--crumbs {
@@ -273,6 +277,8 @@
 }
 .life-dog-slider {
   margin-bottom: 36px;
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 
 .partners {

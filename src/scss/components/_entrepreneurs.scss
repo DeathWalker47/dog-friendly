@@ -91,34 +91,10 @@
   }
 }
 
-.experience {
-  &__top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 40px;
-  }
-  &__title {
-    position: relative;
-    padding-bottom: 20px;
-    &::before {
-      position: absolute;
-      content: "";
-      background-image: url("../img/duble-line-title-2.png");
-      width: 516px;
-      height: 20px;
-      background-repeat: no-repeat;
-      bottom: 0;
-      left: 0;
-    }
-  }
-  &__btns {
-  }
-  &__inner {
+.experience-item {
     display: flex;
     align-items: center;
     justify-content: space-between;
-  }
   &__content {
     width: 485px;
   }
@@ -163,6 +139,30 @@
     height: 100%;
     object-fit: cover;
   }
+}
+
+.experience {
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  &__title {
+    position: relative;
+    padding-bottom: 20px;
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url("../img/duble-line-title-2.png");
+      width: 516px;
+      height: 20px;
+      background-repeat: no-repeat;
+      bottom: 0;
+      left: 0;
+    }
+  }
+
 }
 .dogfriendly-guides {
   &__title {

@@ -383,10 +383,91 @@
     margin-right: 12px;
     svg {
       object-fit: cover;
+      path {
+        &:nth-child(1) {
+          fill: #BC781E;
+        }
+      }
     }
   }
   &__descr {
     font-size: 14px;
     line-height: 14px;
+  }
+  &__address {
+
+  }
+}
+
+.address {
+  padding: 20px;
+  border-radius: var(--bor-rad);
+  border: 1px solid var(--light-gray);
+  margin-bottom: 24px;
+  &__text {
+    position: relative;
+    display: block;
+    margin-bottom: 5px;
+    padding-left: 26px;
+    &::before {
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      background-repeat: no-repeat;
+      background-size: cover;
+      width: 18px;
+      height: 18px;
+    }
+  }
+  &__loc {
+    &::before {
+      background-image: url('../../img/location.svg');
+    }
+  }
+  &__work {
+    &::before {
+      background-image: url('../../img/clock.svg');
+    }
+  }
+  &__btn {
+    @extend %nato-500;
+    font-size: 14px;
+    line-height: 14px;
+    color: var(--breadcrumbs-color);
+  }
+}
+
+.friendly-level {
+  &__subtitle {
+    display: block;
+    margin-bottom: 12px;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .dog-lvl {
+    &__circle {
+      align-items: center;
+      gap: 4px;
+      margin-bottom: 24px;
+      span {
+        width: 12px;
+        height: 12px;
+      }
+    }
+    &__descr {
+      margin-left: 12px;
+      font-size: 14px;
+      line-height: 16px;
+    }
+    &__btn-tooltip {
+      width: 12px;
+      height: 12px;
+    }
+  }
+  .hidden {
+    display: none;
   }
 }

@@ -10,8 +10,8 @@
   padding: 140px 0 70px;
   background-size: cover;
   background-repeat: no-repeat;
-  // width: 1440px;
   height: 755px;
+  box-sizing:border-box;
   border-radius: var(--bor-rad);
   &__content {
     display: flex;
@@ -65,9 +65,4 @@
   &__btn {
     border: none;
   }
-}
-
-.swiper-wrapper {
-  display: flex;
-  gap: 30px;
 }
