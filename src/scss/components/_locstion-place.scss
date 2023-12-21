@@ -1,10 +1,9 @@
 .location-place {
   position: relative;
   display: block;
-  margin-bottom: 190px;
+  padding: 190px 0;
   &__inner {
     display: flex;
-    flex-wrap: wrap;
     padding-left: max(15px, calc((100% - 1326px) / 2));
   }
   &__left {

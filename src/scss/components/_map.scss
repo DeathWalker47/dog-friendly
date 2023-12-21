@@ -235,7 +235,6 @@
   }
 }
 
-
 .map-select {
   position: absolute;
   top: 40px;
@@ -299,10 +298,10 @@
     }
     &::before {
       position: absolute;
-      content:'';
+      content: "";
       background-repeat: no-repeat;
       background-size: cover;
-      background-image: url('../../img/arrow-up-right.svg');
+      background-image: url("../img/arrow-up-right.svg");
       width: 20px;
       height: 20px;
       top: 50%;
@@ -358,14 +357,11 @@
       }
     }
     &__text {
-
     }
   }
 }
 
-
 .location-info {
-
   &__top {
     margin-bottom: 24px;
   }
@@ -385,7 +381,7 @@
       object-fit: cover;
       path {
         &:nth-child(1) {
-          fill: #BC781E;
+          fill: #bc781e;
         }
       }
     }
@@ -395,7 +391,6 @@
     line-height: 14px;
   }
   &__address {
-
   }
 }
 
@@ -411,7 +406,7 @@
     padding-left: 26px;
     &::before {
       position: absolute;
-      content: '';
+      content: "";
       top: 50%;
       left: 0;
       transform: translateY(-50%);
@@ -423,12 +418,12 @@
   }
   &__loc {
     &::before {
-      background-image: url('../../img/location.svg');
+      background-image: url("../img/location.svg");
     }
   }
   &__work {
     &::before {
-      background-image: url('../../img/clock.svg');
+      background-image: url("../img/clock.svg");
     }
   }
   &__btn {

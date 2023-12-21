@@ -28,8 +28,14 @@ html {
 .wrapper {
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1920px;
+  // overflow: hidden;
   min-height: 100%;
+}
+
+.wrapper.wrapper-over {
+  // overflow: auto;
 }
 
 .main {

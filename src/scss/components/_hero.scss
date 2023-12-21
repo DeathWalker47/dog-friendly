@@ -1,7 +1,3 @@
-.hero {
-  margin-bottom: 190px;
-}
-
 .swiper-slide {
   width: 100%;
 }
@@ -12,6 +8,7 @@
   background-repeat: no-repeat;
   height: 755px;
   box-sizing:border-box;
+  background-position: center;
   border-radius: var(--bor-rad);
   &__content {
     display: flex;
