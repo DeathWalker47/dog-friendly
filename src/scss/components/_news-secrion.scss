@@ -71,6 +71,7 @@
   background-image: url("../img/blog-info-img.png");
   background-repeat: no-repeat;
   background-position: center;
+  z-index: 3;
   // &:before {
   //   position: absolute;
   //   content: '';
@@ -80,6 +81,7 @@
 
   &__content {
     color: var(--white);
+    z-index: 2;
   }
   &__title {
     width: 370px;

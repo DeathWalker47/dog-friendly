@@ -37,7 +37,6 @@ const swiperNewEvent = new Swiper('.new-event', {
     prevEl: '.new-event-prev',
   },
   breakpoints: {
-    // when window width is >= 320px
     320: {
       slidesPerView: 1,
       spaceBetween: 20
@@ -46,16 +45,10 @@ const swiperNewEvent = new Swiper('.new-event', {
       slidesPerView: 2,
       spaceBetween: 20
     },
-    // when window width is >= 480px
     998: {
       slidesPerView: 3,
       spaceBetween: 30
     },
-    // when window width is >= 640px
-    // 1200: {
-    //   slidesPerView: 3,
-    //   spaceBetween: 40
-    // }
   }
 });
 
@@ -66,6 +59,20 @@ const swiperObjectives = new Swiper('.objectives-slider', {
     nextEl: '.objectives-slider-next',
     prevEl: '.objectives-slider-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    998: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
 });
 
 const swiperLiveDogSlider = new Swiper('.life-dog-slider', {
@@ -75,6 +82,20 @@ const swiperLiveDogSlider = new Swiper('.life-dog-slider', {
     nextEl: '.life-dog-next',
     prevEl: '.life-dog-prev',
   },
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20
+    },
+    640: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    998: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+  }
 });
 
 const swiperExerience = new Swiper('.experience-slider', {

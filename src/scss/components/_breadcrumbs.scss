@@ -4,8 +4,11 @@
 
 .breadcrumbs-list {
   display: flex;
+  flex-wrap: wrap;
   &__item {
     position: relative;
+    display: flex;
+    align-items: center;
     &:not(:last-child ) {
       padding-right: 13px;
       margin-right: 12px;

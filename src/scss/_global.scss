@@ -1,6 +1,7 @@
 body,
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 .page {
@@ -30,12 +31,16 @@ html {
   flex-direction: column;
   margin: 0 auto;
   max-width: 1920px;
-  // overflow: hidden;
+  overflow: hidden;
   min-height: 100%;
 }
 
-.wrapper.wrapper-over {
-  // overflow: auto;
+.wrapper-over {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 1920px;
+  min-height: 100%;
 }
 
 .main {

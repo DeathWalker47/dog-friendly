@@ -317,9 +317,9 @@ exports.build = series(
 // deploy
 const deploy = () => {
   let conn = ftp.create({
-    host: "portfolio.sfizer.ru",
-    user: "fizer0r9",
-    password: "6qtZgvqQ",
+    host: "77.222.57.185",
+    user: "fizer00mai",
+    password: "Fgyewp223",
     parallel: 10,
     log: gutil.log,
   });
@@ -330,8 +330,9 @@ const deploy = () => {
     base: "./app",
     buffer: false,
   })
-    .pipe(conn.newer("portfolio/public_html/")) // only upload newer files
-    .pipe(conn.dest("portfolio/public_html/"));
+    .pipe(conn.newer("/fizer00mai/sfizer_ru/public_html/")) // only upload newer files
+    .pipe(conn.dest("/fizer00mai/sfizer_ru/public_html/"));
 };
+
 
 exports.deploy = deploy;
