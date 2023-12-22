@@ -1,7 +1,29 @@
+.residents-page {
+  .contact {
+    &::before {
+      display: none;
+
+    }
+  }
+}
+
 .residents {
+  position: relative;
+  &::before {
+    position: absolute;
+    content:'';
+    background-image: url('../../img/resid-bottom.png');
+    width: 747px;
+    height: 2086px;
+    z-index: -1;
+    background-repeat: no-repeat;
+    top: 27%;
+    left: 27%;
+  }
   &__top {
     margin-bottom: 128px;
   }
+
   &__title {
     position: relative;
     padding-bottom: 12px;
@@ -18,16 +40,18 @@
       left: 0;
     }
   }
-  &__list {
-  }
+
+  &__list {}
 }
 
 .residents-list {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   gap: 24px;
+
   &__item {
     grid-column: 4 span;
+
     &:nth-child(2) {
       position: relative;
 
@@ -63,17 +87,21 @@
     width: 347px;
     height: 356px;
   }
+
   &__item {
     padding: 30px 40px;
     background-color: var(--white);
     border-radius: var(--bor-rad);
   }
+
   &__item--open {
     border: 1px solid var(--light-gray);
+
     .accardeon__box {
       transform: rotate(45deg);
     }
   }
+
   &__control {
     position: relative;
     display: flex;
@@ -82,18 +110,21 @@
     width: 100%;
     cursor: pointer;
   }
+
   &__title {
     @extend %mul-600;
     font-size: 24px;
     line-height: 32px;
     color: var(--black);
   }
+
   &__box {
     transition: transform 0.2s linear;
   }
+
   &__content {
     line-height: 26px;
-    // padding: 0 40px 0;
+    color: var(--text-color);
     max-height: 0;
     will-change: max-height;
     overflow: hidden;
@@ -112,10 +143,12 @@
     justify-content: space-between;
     margin-bottom: 54px;
   }
+
   &__title {
     position: relative;
     max-width: 540px;
     padding-bottom: 20px;
+
     &::before {
       position: absolute;
       content: "";
@@ -127,12 +160,15 @@
       height: 18px;
     }
   }
+
   &__text {
     max-width: 530px;
     font-size: 20px;
     line-height: 32px;
+    color: var(--text-color);
   }
 }
+
 .tabs {
   &__nav {
     width: 840px;
@@ -141,12 +177,14 @@
     border-radius: var(--bor-rad);
     background-color: var(--white);
   }
+
   &__nav-item {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   &__nav-btn {
     flex-grow: 1;
     padding: 24px 36px;
@@ -157,32 +195,37 @@
     border-radius: var(--bor-rad);
     background-color: var(--white);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
     &:focus {
       background-color: var(--dark);
       color: var(--white);
     }
   }
+
   &__nav-btn--active {
     background-color: var(--dark);
     color: var(--white);
   }
-  &__content {
-  }
-  &__panel {
-  }
+
+  &__content {}
+
+  &__panel {}
 }
+
 .tabs-form {
   &__inner {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
   }
+
   &__left {
     width: 526px;
     display: flex;
     flex-direction: column;
     gap: 32px;
   }
+
   &__label {
     width: 100%;
     display: flex;
@@ -197,36 +240,45 @@
       color: #707070;
     }
   }
+
   &__input {
     margin-top: 12px;
     width: 100%;
   }
+
   &__inputs {
     display: flex;
     gap: 8px;
   }
+
   &__customs {
     display: flex;
     flex-direction: column;
   }
+
   &__customs-label {
     margin-bottom: 12px;
   }
+
   &__right {
     max-width: 526px;
   }
+
   &__textarea {
     resize: none;
     height: 118px;
     margin-bottom: 8px;
   }
+
   &__text {
     font-size: 14px;
     line-height: 22px;
     color: #707070;
   }
+
   &__file {
     margin-bottom: 32px;
+
     span {
       color: var(--breadcrumbs-color);
       font-size: 14px;
@@ -235,6 +287,7 @@
       cursor: pointer;
     }
   }
+
   &__file-input {
     position: absolute;
     width: 1px;
@@ -242,6 +295,7 @@
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
+
   &__btn {
     width: 100%;
     margin-top: 18px;
@@ -252,8 +306,9 @@
   &:not(:last-child) {
     margin-bottom: 8px;
   }
-  &__field {
-  }
+
+  &__field {}
+
   &__content {
     color: var(--text-color);
   }

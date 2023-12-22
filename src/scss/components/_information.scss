@@ -1,9 +1,67 @@
+.info-list-page {
+  .contact {
+    &::before {
+      display: none;
+    }
+
+
+  }
+}
+
+.education-page,
+.dog-friend-page {
+  .blog-list {
+    &::before {
+      bottom: 29%;
+    }
+  }
+}
+
+.life-dog-page {
+  .contact {
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -13%;
+      left: 22%;
+      background-image: url('../img/back-img-2.png');
+      z-index: -1;
+      width: 346px;
+      transform: rotate(-83deg);
+      height: 355px;
+    }
+  }
+}
+
+
+
+.life-with-a-dog {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: '';
+    background-image: url('../../img/life-img-elem.png');
+    background-repeat: no-repeat;
+    top: -9%;
+    left: 29%;
+    z-index: -1;
+    width: 830px;
+    height: 1963px;
+    transform: rotate(-10deg);
+  }
+
+  .info-page__top {
+    margin-bottom: 128px;
+  }
+}
+
 .info-page {
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 50px;
+    // margin-bottom: 128px;
   }
 
   &__top-text {
@@ -15,6 +73,7 @@
     @extend %mul-600;
     font-size: 40px;
     line-height: 48px;
+    color: var(--black);
 
     &::before {
       position: absolute;
@@ -29,6 +88,7 @@
     @extend %nato-500;
     font-size: 20px;
     line-height: 32px;
+    color: var(--text-color);
   }
 
   &__right {
@@ -38,6 +98,7 @@
   &__right-text {
     font-size: 20px;
     line-height: 32px;
+    color: var(--text-color);
   }
 
   &__right-img {
@@ -53,20 +114,69 @@
   }
 }
 
+.instructions-and-guides {
+  .info-page__top {
+    margin-bottom: 53px;
+  }
+}
+
+.how-get-pet {
+  .info-page__top {
+    margin-bottom: 115px;
+  }
+}
+
+.education-and-training {
+  .info-page__top {
+    margin-bottom: 49px;
+  }
+}
+
+.health-care {
+  .info-page__top {
+    margin-bottom: 96px;
+  }
+}
+
+.dog-friend {
+  .info-page__top {
+    margin-bottom: 96px;
+  }
+
+  &__title {
+    padding-bottom: 12px;
+    margin-bottom: 18px;
+    position: relative;
+
+    &::before {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-image: url('../../img/dog-friendli-img.png');
+      background-repeat: no-repeat;
+      width: 275px;
+      height: 10px;
+    }
+  }
+}
+
 .loalg {
   display: inline-block;
   width: 100%;
   height: 100%;
 }
+
 //Разные украшения для заголовков
 
 .life-with-a-dog {
+  padding-top: 98px;
+
   &__title {
     padding-bottom: 23px;
 
     &::before {
       background-image: url("../img/life-list-title-elem.png");
-      width: 510px;
+      width: 490px;
       height: 17px;
     }
   }
@@ -210,7 +320,7 @@
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 26px;
-    color: var(--black);
+    color: var(--text-color);
   }
 
   &__text-info {
@@ -229,6 +339,7 @@
     position: relative;
     margin-top: auto;
   }
+
   &__right-image {
     max-width: 300px;
     max-height: 450px;
@@ -246,10 +357,11 @@
 
 .cart-item--big-one {
   &::before {
-    background-image: url("../img/life-list-big-2.png");
-    width: 503px;
-    height: 467px;
-    right: 0;
+    background-image: url("../../img/line-life-dog-1.png");
+    width: 1056px;
+    height: 1550px;
+    right: -39%;
+    top: 0%;
   }
 }
 
@@ -269,9 +381,9 @@
 
 .cart-item--big-two {
   &::before {
-    background-image: url("../img/life-list-big-1.png");
-    width: 1182px;
-    height: 954px;
+    background-image: url("../../img/line-life-dog-2.png");
+    width: 1182.976px;
+    height: 954.493px;
     bottom: -105%;
     background-size: auto;
     left: 18%;
@@ -284,15 +396,17 @@
     width: 1108px;
     height: 448px;
     right: -47%;
-    bottom: 30px;
+    bottom: 18px;
   }
 }
 
 .cart-item--black {
   background-color: var(--dark);
+
   .cart-item__link {
     border-color: var(--white);
   }
+
   h2,
   p,
   span {
@@ -307,10 +421,35 @@
 }
 
 .blog-list {
+  position: relative;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   column-gap: 24px;
   row-gap: 36px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -15%;
+    left: -194px;
+    background-repeat: no-repeat;
+    background-image: url('../img/back-img-2.png');
+    z-index: -1;
+    width: 346px;
+    height: 355px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-image: url('../../img/img-3.png');
+    top: 11%;
+    left: 4%;
+    width: 826px;
+    height: 2150px;
+    z-index: -1;
+  }
 
   &__item {
     position: relative;
@@ -484,17 +623,20 @@
     margin-bottom: 24px;
     font-size: 24px;
     line-height: 32px;
+    color: var(--black);
   }
 
   &__text {
     font-size: 16px;
     line-height: 26px;
     margin-bottom: auto;
+    color: var(--text-color);
   }
 
   &__image {
     max-width: 415px;
   }
+
   &__btn-link {
     cursor: pointer;
   }

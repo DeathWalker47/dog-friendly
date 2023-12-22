@@ -11,6 +11,7 @@
     @extend %mul-800;
     font-size: 40px;
     line-height: 48px; /* 120% */
+    color: var(--title-color);
   }
 }
 .post {
@@ -51,6 +52,7 @@
     font-size: 20px;
     line-height: 32px;
     margin-bottom: 10px;
+    color: var(--text-color);
   }
   &__btn {
     display: block;

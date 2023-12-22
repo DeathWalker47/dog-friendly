@@ -1,3 +1,20 @@
+.about-section {
+  .contact {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -15%;
+      left: auto;
+      right: 224px;
+      background-image: url('../img/back-img-2.png');
+      z-index: -1;
+      width: 346px;
+      transform: rotate(-89deg);
+      height: 355px;
+    }
+  }
+}
+
 .about-page {
   padding-top: 48px;
 }
@@ -21,6 +38,7 @@
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 36px;
+    color: var(--black);
 
     &::before {
       position: absolute;
@@ -39,6 +57,7 @@
   &__top-text {
     font-size: 20px;
     line-height: 32px;
+    color: var(--text-color);
   }
 
   &__top-image {
@@ -66,18 +85,22 @@
       width: 145px;
       height: 123px;
       top: 57%;
-      left: -30px;
+      left: -35px;
     }
 
     img {
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: var(--bor-rad);
+      overflow: hidden;
     }
   }
 
   &__img-box {
     position: absolute;
+    top: 0;
+    right: 44px;
     width: 526px;
     height: 640px;
     border-radius: var(--bor-rad);
@@ -88,6 +111,20 @@
 }
 
 .objectives {
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 4%;
+    left: 6%;
+    background-repeat: no-repeat;
+    background-image: url('../../img/about-img-1.png');
+    width: 825px;
+    height: 1127px;
+    z-index: -1;
+  }
+
   &__top {
     display: flex;
     justify-content: space-between;
@@ -117,7 +154,10 @@
 
     &:hover {
       background-color: var(--orange-color);
-      color: var(--white);
+
+      .objective__text {
+        color: var(--white);
+      }
 
       svg {
         fill: var(--white);
@@ -138,21 +178,47 @@
     width: 32px;
     height: 32px;
 
-    fill: var(--orange-color);
+    fill: var(--bright-yellow);
     transition: fill 0.3s ease-in;
   }
 
   &__text {
     @extend %mul-600;
     margin-top: 12px;
+    color: var(--text-color);
     font-size: 24px;
     line-height: 32px;
+    transition: color .3s ease-in-out;
     min-height: 160px;
   }
 }
 
 .dog-team {
+  position: relative;
   margin-bottom: 146px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -24px;
+    right: -194px;
+    background-image: url('../img/back-img-2.png');
+    z-index: -1;
+    width: 346px;
+    transform: rotate(-89deg);
+    height: 355px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -53%;
+    right: 0%;
+    background-image: url('../img/about-img-2.png');
+    z-index: -1;
+    width: 825px;
+    height: 1127px;
+  }
 
   &__title {
     position: relative;
@@ -202,7 +268,7 @@
     @extend %mul-600;
     font-size: 24px;
     line-height: 32px;
-    /* 133.333% */
+    color: var(--black);
     margin-bottom: 10px;
   }
 
@@ -212,6 +278,7 @@
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     margin-bottom: 24px;
+    color: var(--black);
     font-size: 16px;
     line-height: 26px;
   }
@@ -222,7 +289,20 @@
 }
 
 .life-dog {
+  position: relative;
   margin-bottom: 128px;
+
+  &::before {
+    position: absolute;
+    content: "";
+    bottom: -9%;
+    left: -144px;
+    background-image: url('../img/back-img-2.png');
+    z-index: -1;
+    width: 346px;
+    transform: rotate(-89deg);
+    height: 355px;
+  }
 
   &__top {
     display: flex;
@@ -254,6 +334,7 @@
     @extend %mul-600;
     font-size: 24px;
     line-height: 32px;
+    color: var(--black);
   }
 
   &__item-text {
@@ -315,9 +396,11 @@
 }
 
 .life-dog-slider {
+  position: relative;
   margin-bottom: 36px;
   padding-top: 20px;
   padding-bottom: 30px;
+
 }
 
 .partners {
@@ -376,6 +459,7 @@
     @extend %mul-600;
     font-size: 24px;
     line-height: 32px;
+    color: var(--black);
   }
 
   &__address {
@@ -383,6 +467,7 @@
     display: block;
     margin-bottom: 13px;
     line-height: 26px;
+    color: var(--black);
   }
 
   &__link {

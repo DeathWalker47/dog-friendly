@@ -5,10 +5,10 @@ if(accardeon) {
   el.addEventListener('click', (e) => {
     const self = e.currentTarget;
     const content = self.querySelector('.accardeon__content');
-    document.querySelectorAll('.accardeon__item').forEach(el => {
-      el.classList.remove('accardeon__item--open')
-      el.querySelector('.accardeon__content').style.maxHeight = null;
-    })
+    // document.querySelectorAll('.accardeon__item').forEach(el => {
+    //   el.classList.remove('accardeon__item--open')
+    //   el.querySelector('.accardeon__content').style.maxHeight = null;
+    // })
 
     self.classList.toggle('accardeon__item--open');
 

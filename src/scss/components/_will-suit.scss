@@ -1,6 +1,7 @@
 .will-suit {
   position: relative;
   margin-bottom: 128px;
+
   &::before {
     position: absolute;
     content: "";
@@ -12,17 +13,19 @@
     background-repeat: no-repeat;
     z-index: -1;
   }
+
   &::after {
     position: absolute;
     content: "";
-    top: 50%;
-    left: 40%;
-    transform: translate(-50%, -50%);
-    background-image: url("../img/back-img.png");
-    width: 572px;
+    top: -75%;
+    background-repeat: no-repeat;
+    left: 20%;
+    background-image: url("../img/will-back-img.png");
     height: 1261px;
+    width: 715px;
     z-index: -1;
   }
+
   &__list {
     display: flex;
     justify-content: center;
@@ -30,8 +33,8 @@
     flex-wrap: wrap;
     gap: 24px;
   }
-  &__item {
-  }
+
+  &__item {}
 }
 
 .suit {
@@ -46,50 +49,112 @@
   background-repeat: no-repeat;
   background-position: 100% 100%;
   background-size: auto;
+  overflow: hidden;
+  z-index: 2;
+
+  &::before {
+    position: absolute;
+    content: '';
+    bottom: -70px;
+    right: -58px;
+    width: 455px;
+    background-repeat: no-repeat;
+    height: 271px;
+    z-index: -1;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    right: 0;
+    background-repeat: no-repeat;
+  }
+
   &--dark {
     background-color: var(--dark);
     color: var(--white);
-    background-image: url("../img/dog-1.png");
+
+    &::after {
+      background-image: url("../img/will-dog-1.png");
+      width: 196px;
+      height: 229px;
+    }
+
+    &::before {
+      background-image: url('../../img/will-1.png');
+    }
+
     .suit__btn {
       border-color: var(--white);
     }
   }
+
   &--white {
     background-color: var(--white);
     color: var(--dark);
-    background-image: url("../img/dog-2.png");
+
+    &::after {
+      background-image: url("../img/will-dog-2.png");
+      width: 201px;
+      height: 281px;
+    }
+
+    &::before {
+      background-image: url('../../img/will-2.png');
+    }
+
 
   }
+
   &--yellow {
     background-color: var(--bright-yellow);
     color: var(--dark);
-    background-image: url("../img/dog-3.png");
+
+    &::before {
+      background-image: url('../../img/will-3.png');
+    }
+
+    &::after {
+      background-image: url("../img/will-dog-3.png");
+      width: 186px;
+      height: 240px;
+    }
+
     .suit__btn {
       border-color: transparent;
     }
   }
+
   &__title {
     @extend %mul-600;
     font-size: 40px;
-    line-height: 48px; /* 120% */
+    line-height: 48px;
+    /* 120% */
     margin-bottom: 24px;
   }
+
   &__text {
     font-size: 20px;
-    line-height: 32px; /* 160% */
+    line-height: 32px;
+    /* 160% */
   }
+
   &__btn {
     margin-top: auto;
   }
+
   &__list {
     padding-left: 30px;
     width: 305px;
   }
+
   &__item {
     position: relative;
     @extend %nato-500;
     font-size: 20px;
     line-height: 32px;
+
     &::before {
       position: absolute;
       content: "";

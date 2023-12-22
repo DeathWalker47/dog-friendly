@@ -1,42 +1,50 @@
 .footer {
-    padding: 86px 0;
-    background-color: var(--dark);
+  padding: 86px 0;
+  background-color: var(--dark);
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+
   &__inner {
     display: flex;
     justify-content: space-between;
 
   }
+
   &__lefr-col {
     display: flex;
     flex-direction: column;
   }
+
   &__logo {
-      margin-bottom: auto;
+    margin-bottom: auto;
   }
+
   &__conf {
     color: var(--dark-gray);
     font-size: 20px;
     line-height: 32px;
   }
-  &__center-col {
 
-  }
+  &__center-col {}
+
   &__right-col {
     display: flex;
     flex-direction: column;
   }
+
   &__tel-num {
     margin-bottom: 20px;
   }
-  &__email {
 
-  }
+  &__email {}
+
   &__link {
     @extend %nato-500;
-    color:var(--white);
+    color: var(--white);
     font-size: 24px;
     line-height: 36px;
   }
+
   &__social {
     margin-top: auto;
   }
@@ -45,14 +53,14 @@
 
 .footer-nav {
 
-  &__list {
+  &__list {}
 
-  }
   &__item {
     &:not(:last-child) {
       margin-bottom: 20px;
     }
   }
+
   &__link {
     font-size: 24px;
     line-height: 36px;
@@ -64,11 +72,13 @@
   display: flex;
   align-items: center;
   margin-left: auto;
+
   &__item {
     &:not(:last-child) {
       margin-right: 10px;
     }
   }
+
   &__link {
     display: block;
     width: 52px;
@@ -76,14 +86,13 @@
     padding: 10px;
     border: 1px solid var(--gray);
     border-radius: 16px;
+
     svg {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      fill:  var(--gray);
+      fill: var(--gray);
     }
   }
 
 }
-
-

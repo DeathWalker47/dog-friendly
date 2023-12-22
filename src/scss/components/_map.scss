@@ -1,13 +1,31 @@
-.map-section {
-  &__location {
-  }
-  &__title {
-  }
-  &__list {
-  }
-  &__inner {
+.map-page {
+  .contact {
+    &::before {
+      position: absolute;
+      content: "";
+      top: -15%;
+      left: auto;
+      right: 224px;
+      background-image: url('../img/back-img-2.png');
+      z-index: -1;
+      width: 346px;
+      transform: rotate(-89deg);
+      height: 355px;
+    }
   }
 }
+
+
+.map-section {
+  &__location {}
+
+  &__title {}
+
+  &__list {}
+
+  &__inner {}
+}
+
 .map {
   position: relative;
   margin-bottom: 128px;
@@ -26,11 +44,24 @@
     background-color: var(--dark);
   }
 
+  &::after {
+    position: absolute;
+    content: "";
+    bottom: -150px;
+    right: 0px;
+    background-image: url('../img/back-img-2.png');
+    z-index: -2;
+    width: 346px;
+    transform: rotate(-78deg);
+    height: 355px;
+  }
+
   &__box {
     width: 100%;
     height: 755px;
     border-radius: var(--bor-rad);
     overflow: hidden;
+
     img {
       width: 100%;
       height: 100%;
@@ -40,6 +71,21 @@
 
 .dog-location {
   margin-bottom: 128px;
+  position: relative;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -203%;
+    left: 18%;
+    background-repeat: no-repeat;
+    background-image: url('../../img/news-back-img.png');
+    width: 913px;
+    height: 2560px;
+    z-index: -2;
+    transform: rotate(-14deg);
+  }
+
   &__title {
     @extend %mul-600;
     font-size: 40px;
@@ -47,12 +93,14 @@
     margin-bottom: 56px;
     color: var(--black);
   }
+
   &__list {
     display: flex;
     gap: 24px;
     align-items: center;
     justify-content: center;
   }
+
   &__item {
     padding: 46px 22px 60px 38px;
     background-color: var(--white);
@@ -65,6 +113,7 @@
     display: flex;
     gap: 10px;
     margin-bottom: 28px;
+
     span {
       width: 20px;
       height: 20px;
@@ -72,48 +121,61 @@
       background-color: var(--light-gray);
     }
   }
+
   &__title {
     @extend %mul-600;
     margin-bottom: 24px;
     line-height: 42px;
     font-size: 32px;
+    color: var(--back);
   }
+
   &__descr {
     line-height: 26px;
+    color: #585858;
   }
+
   &__circle--eazy {
     span:nth-child(1) {
       background-color: var(--bright-yellow);
     }
   }
+
   &__circle--medium {
     span {
       background-color: #f8ad07;
     }
+
     span:nth-child(3) {
       background-color: var(--light-gray);
     }
   }
+
   &__circle--hard {
     span {
       background-color: #db2d61;
     }
   }
 }
+
 .nice-guest {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 128px;
+
   &__content {
     width: 636px;
   }
+
   &__title {
     @extend %mul-600;
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 56px;
+    color: var(--black);
   }
+
   &__text {
     margin-bottom: 36px;
     position: relative;
@@ -132,8 +194,9 @@
       background-size: cover;
     }
   }
-  &__descr {
-  }
+
+  &__descr {}
+
   &__image {
     position: relative;
     max-width: 526px;
@@ -146,6 +209,7 @@
       background-repeat: no-repeat;
       background-size: cover;
     }
+
     &::before {
       background-image: url("../img/dog-elem-1.svg");
       top: -36px;
@@ -153,6 +217,7 @@
       width: 75px;
       height: 70px;
     }
+
     &::after {
       background-image: url("../img/dog-elem-2.svg");
       top: 32%;
@@ -161,8 +226,11 @@
       height: 71px;
     }
   }
+
   &__image-box {
     position: absolute;
+    top: 0;
+    right: 35px;
     background-color: var(--white);
     border-radius: var(--bor-rad);
     transform: rotate(-8deg);
@@ -170,12 +238,16 @@
     width: 100%;
     height: 100%;
   }
+
   &__img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius: var(--bor-rad);
+    overflow: hidden;
   }
 }
+
 .map-info {
   position: relative;
   background-color: var(--orange-color);
@@ -186,21 +258,38 @@
   background-image: url("../img/map-info-img.png");
   background-repeat: no-repeat;
   background-size: cover;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: -15%;
+    left: -100px;
+    background-image: url('../img/back-img-2.png');
+    z-index: -1;
+    width: 346px;
+    transform: rotate(-71deg);
+    height: 355px;
+  }
+
   &__content {
     width: 706px;
     border-radius: var(--bor-rad);
     background-color: var(--white);
     padding: 40px;
   }
+
   &__title {
     @extend %mul-600;
     font-size: 40px;
     line-height: 48px;
     margin-bottom: 36px;
+    color: var(--black);
   }
+
   &__list {
     margin-bottom: 24px;
   }
+
   &__item {
     position: relative;
     padding-left: 25px;
@@ -217,22 +306,25 @@
       border-radius: 100%;
     }
   }
+
   &__text {
     margin-bottom: 40px;
   }
+
   &__btns {
     display: flex;
     gap: 20px;
   }
-  &__link {
-  }
+
+  &__link {}
+
   &__image {
     position: absolute;
     bottom: 0;
     right: 0;
   }
-  &__img {
-  }
+
+  &__img {}
 }
 
 .map-select {
@@ -243,33 +335,41 @@
   padding: 40px;
   border-radius: 40px;
   background-color: var(--white);
+
   &--two {
     left: 600px;
   }
+
   &__top {
     display: flex;
     flex-direction: column;
     margin-bottom: 24px;
   }
+
   &__subtitle {
     display: block;
     margin-bottom: 10px;
     @extend %mul-600;
     font-size: 20px;
     line-height: 28px;
+    color: var(--text-color);
   }
+
   &__items {
     padding: 24px 20px;
     border-radius: var(--bor-rad);
     @extend %nato-500;
+    border: 1px solid #D9D9D9;
     font-size: 16px;
     line-height: 16px;
     cursor: pointer;
+
     &:focus,
     &:focus-visible {
       border-color: var(--breadcrumbs-color);
       outline: none;
     }
+
     option {
       padding: 10px;
       @extend %nato-500;
@@ -278,11 +378,13 @@
       cursor: pointer;
     }
   }
+
   &__bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
+
   &__btn {
     @extend %nato-500;
     position: relative;
@@ -291,11 +393,13 @@
     color: var(--breadcrumbs-color);
     cursor: pointer;
     padding-right: 25px;
+
     &--back {
       &:before {
         display: none;
       }
     }
+
     &::before {
       position: absolute;
       content: "";
@@ -309,6 +413,7 @@
       transform: translateY(-50%);
     }
   }
+
   &__close {
     @extend %nato-500;
     font-size: 14px;
@@ -317,23 +422,28 @@
     cursor: pointer;
   }
 }
+
 .map-location {
   width: 400px;
   height: 280px;
   margin-bottom: 30px;
   overflow-y: auto;
+
   .custom-checkbox {
     display: block;
     width: 100%;
+
     &:not(:last-of-type) {
       margin-bottom: 16px;
     }
+
     &__content {
       display: flex;
       align-items: center;
       padding-left: 0;
       line-height: 26px;
       color: var(--black);
+
       &::before,
       &::after {
         left: auto;
@@ -342,6 +452,7 @@
         transform: translateY(-50%);
       }
     }
+
     &__img {
       display: flex;
       justify-content: center;
@@ -356,8 +467,8 @@
         object-fit: cover;
       }
     }
-    &__text {
-    }
+
+    &__text {}
   }
 }
 
@@ -365,6 +476,7 @@
   &__top {
     margin-bottom: 24px;
   }
+
   &__title {
     display: flex;
     align-items: center;
@@ -372,13 +484,16 @@
     font-size: 16px;
     line-height: 26px;
   }
+
   &__img {
     display: block;
     width: 33px;
     height: 33px;
     margin-right: 12px;
+
     svg {
       object-fit: cover;
+
       path {
         &:nth-child(1) {
           fill: #bc781e;
@@ -386,12 +501,13 @@
       }
     }
   }
+
   &__descr {
     font-size: 14px;
     line-height: 14px;
   }
-  &__address {
-  }
+
+  &__address {}
 }
 
 .address {
@@ -399,11 +515,13 @@
   border-radius: var(--bor-rad);
   border: 1px solid var(--light-gray);
   margin-bottom: 24px;
+
   &__text {
     position: relative;
     display: block;
     margin-bottom: 5px;
     padding-left: 26px;
+
     &::before {
       position: absolute;
       content: "";
@@ -416,16 +534,19 @@
       height: 18px;
     }
   }
+
   &__loc {
     &::before {
       background-image: url("../img/location.svg");
     }
   }
+
   &__work {
     &::before {
       background-image: url("../img/clock.svg");
     }
   }
+
   &__btn {
     @extend %nato-500;
     font-size: 14px;
@@ -447,21 +568,25 @@
       align-items: center;
       gap: 4px;
       margin-bottom: 24px;
+
       span {
         width: 12px;
         height: 12px;
       }
     }
+
     &__descr {
       margin-left: 12px;
       font-size: 14px;
       line-height: 16px;
     }
+
     &__btn-tooltip {
       width: 12px;
       height: 12px;
     }
   }
+
   .hidden {
     display: none;
   }

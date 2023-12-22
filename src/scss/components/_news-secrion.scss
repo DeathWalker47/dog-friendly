@@ -1,8 +1,42 @@
+.news-section {
+  .contact {
+    &::before {
+      top: -118%;
+      left: 20%;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      bottom: -427px;
+      left: 210px;
+      background-image: url('../img/back-img-2.png');
+      z-index: -1;
+      width: 346px;
+      height: 355px;
+    }
+  }
+}
+
+
 .section-news {
+
+  position: relative;
   margin-bottom: 88px;
-  background-repeat: no-repeat;
-  background-position: 50% 0%;
-  background-image: url("../img/news-back-img.png");
+
+  &::before {
+    position: absolute;
+    content: '';
+    top: -148px;
+    left: 29%;
+    ;
+    background-repeat: no-repeat;
+    background-image: url('../../img/news-back-img.png');
+    width: 913px;
+    height: 2560px;
+    z-index: -1;
+  }
+
   &__title {
     position: relative;
     margin-bottom: 38px;
@@ -19,8 +53,8 @@
       background-repeat: no-repeat;
     }
   }
-  &__inner {
-  }
+
+  &__inner {}
 }
 
 .news-content {
@@ -45,12 +79,13 @@
   &::after {
     position: absolute;
     content: "";
-    bottom: 400px;
-    right: 100px;
-    background-image: url("../img/back-img-2.png");
+    bottom: 10%;
+    right: -11%;
+    background-image: url('../img/back-img-2.png');
     width: 346px;
     height: 355px;
     z-index: -1;
+    transform: rotate(-75deg)
   }
 
   .post {
@@ -83,6 +118,7 @@
     color: var(--white);
     z-index: 2;
   }
+
   &__title {
     width: 370px;
     font-size: 40px;
@@ -90,21 +126,25 @@
     line-height: 48px;
     margin-bottom: 36px;
   }
+
   &__text {
     width: 295px;
     margin-bottom: 60px;
     @extend %nato-500;
     line-height: 26px;
   }
+
   &__link {
     border: none;
   }
+
   &__img {
     position: absolute;
     bottom: 0;
     right: 0;
     width: 386px;
     height: 480px;
+
     img {
       width: 100%;
       height: 100%;
@@ -117,28 +157,33 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
   &__list {
     display: flex;
   }
+
   &__list-item {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
     &:not(:last-child) {
       margin-right: 8px;
     }
   }
+
   &__list-link {
     min-width: 52px;
     height: 52px;
     padding: 12px 14px;
-    @extend %mul-800;
+    @extend %mul-600;
     font-size: 24px;
     line-height: 32px;
     color: var(--black);
     border-radius: 20px;
   }
+
   &__list-link--active {
     background-color: var(--white);
   }
