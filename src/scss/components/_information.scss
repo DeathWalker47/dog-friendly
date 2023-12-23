@@ -329,6 +329,7 @@
     line-height: 26px;
     display: inline-block;
     margin-bottom: auto;
+    color:var(--black);
   }
 
   &__link {
@@ -635,6 +636,9 @@
 
   &__image {
     max-width: 415px;
+    img{
+      height: 100%;
+    }
   }
 
   &__btn-link {

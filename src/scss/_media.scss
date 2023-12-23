@@ -1,13 +1,71 @@
 @media (max-width: 1440px) {
+  .accardeon__box {
+    display: block;
+    max-width: 44px;
+    width: 100%;
+  }
+
+  .materials {
+    z-index: 1;
+  }
+
+  .materials__image {
+    z-index: -1;
+  }
+
+  .schools-info {
+    height: 756px;
+    min-height: auto;
+  }
+
+  .schools-teachers .about::before {
+    top: 8%;
+    left: 0%;
+  }
+
+  .news-section .contact::before {
+    top: -126%;
+    left: 10%;
+  }
+
+  .entrepreneurs::after {
+    bottom: -7%;
+    left: 33%;
+  }
+
+  .entrepreneurs::before {
+    top: 25%;
+    left: 22%;
+  }
+
+  .will-suit::before {
+    right: -70px;
+  }
+
   .cours-article__inner {
     height: 800px;
   }
 }
 
 @media (max-width: 1300px) {
+  .useful-list__item {
+    grid-column: 6 span;
+  }
+
+  .objectives::before {
+    display: none;
+  }
+
+  .dog-team::after {
+    display: none;
+  }
 
   .will-suit::before {
     display: none;
+  }
+
+  .person-card__image {
+    max-width: 100%;
   }
 
   .partners-list__item {
@@ -139,6 +197,106 @@
 }
 
 @media (max-width: 1200px) {
+  .traveling-with-dog {
+    .info-page__top {
+      margin-bottom: 80px;
+    }
+
+    .blog-list__item--small {
+      order: 1;
+    }
+  }
+
+  .instructions-and-guides {
+    .blog-list__item--small {
+      order: 1;
+    }
+  }
+
+  .blog-list__item--dots::before {
+    right: 0;
+  }
+
+  .blog-list::before {
+    display: none;
+  }
+
+  .education-and-training__title::before {
+    display: none;
+  }
+
+  .blog-list__item--jellyfish::before {
+    right: 0;
+  }
+
+  .blog-list {
+    grid-auto-flow: row dense;
+  }
+
+  .blog-list__item--small {
+    grid-column: 6 span;
+  }
+
+  .blog-list__item--big {
+    grid-column: 12 span;
+  }
+
+  .info-page__right-img {
+    display: none;
+  }
+
+  .cart-list__item--small {
+    grid-column: 6 span;
+  }
+
+  .cart-list__item--big {
+    grid-column: 12 span;
+  }
+
+  .life-with-a-dog .info-page__top {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .info-page__top-text {
+    max-width: 100%;
+  }
+
+  .info-page__right {
+    max-width: 100%;
+  }
+
+  .life-with-a-dog__title {
+    padding-bottom: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .announcement__title::before {
+    display: none;
+  }
+
+  .announcement__top {
+    margin-bottom: 40px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .residents::before {
+    display: none;
+  }
+
+  .tabs-form__inner {
+    gap: 20px;
+  }
+
+  .residents-list__item {
+    grid-column: 6 span;
+  }
+
   .contact::before {
     top: -52%;
     left: 14%;
@@ -211,6 +369,16 @@
 }
 
 @media (max-width: 1024px) {
+
+  .entrepreneurs::before,
+  .entrepreneurs::after {
+    display: none;
+  }
+
+  .dog-location::before {
+    display: none;
+  }
+
   .participation__item {
     grid-column: 12 span;
   }
@@ -259,6 +427,53 @@
 }
 
 @media (max-width: 992px) {
+  .cart-item__right-image {
+    display: none;
+  }
+
+  .cart-item--big-one::before {
+    right: -343px;
+  }
+
+  .cart-item--big-three::before {
+    right: -417px;
+  }
+
+  .cart-item__content {
+    padding: 25px;
+  }
+
+  .cart-item__link {
+    margin-top: 8px;
+  }
+
+  .tabs__nav {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .residents-list__item {
+    grid-column: 12 span;
+  }
+
+  .tabs-form__inner {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .announcement__title::before {
+    display: none;
+  }
+
+  .schools-page .contact::before {
+    display: none;
+  }
+
+  .will-suit::after {
+    display: none;
+  }
+
   .advise-list__item {
     grid-column: 6 span;
   }
@@ -371,13 +586,121 @@
     flex-direction: column;
   }
 
-  .hero-slider {
+  .hero-slider,
+  .schools-info {
     padding: 70px 0 50px;
     height: 600px;
+  }
+
+  .about::before {
+    display: none;
   }
 }
 
 @media (max-width: 768px) {
+  .blog-list__item--crumbs::before {
+    width: 60px;
+    height: 39px;
+    top: -26px;
+  }
+
+  .blog-list__item--flourish::before {
+    bottom: 23px;
+    right: -2px;
+  }
+
+  .blog-list__item--small {
+    grid-column: 12 span;
+  }
+
+  .blog-post {
+    height: auto;
+  }
+
+  .blog-post__text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blog-list__item--full .blog-post__content {
+    max-width: 100%;
+  }
+
+  .blog-post__btn-link {
+    margin-top: 20px;
+  }
+
+  .blog-list__item--full .blog-post__text {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blog-post__content {
+    padding: 25px;
+    max-width: 100%;
+  }
+
+  .blog-post__image {
+    display: none;
+  }
+
+  .cart-item {
+    height: auto;
+  }
+
+  .cart-item__text-info {
+    margin-bottom: 20px;
+  }
+
+  .cart-list__item--small {
+    grid-column: 12 span;
+  }
+
+  .cart-item__content {
+    max-width: 100%;
+  }
+
+  .tabs-form__left {
+    width: 100%;
+  }
+
+  .tabs-form__right {
+    max-width: 100%;
+  }
+
+  .tabs-form__inner {
+    align-items: flex-start;
+  }
+
+  .accardeon__item {
+    padding: 20px 20px;
+  }
+
+  .accardeon__title {
+    text-align: left;
+    margin-right: 15px;
+  }
+
+  .schools-info__content {
+    width: 100%;
+  }
+
+  .schools-teachers .about__top-title {
+    border-bottom: none;
+  }
+
+  .contact-content__text span {
+    font-size: 27px;
+    line-height: 32px;
+    margin-bottom: 5px;
+  }
+
+  .useful-list__item {
+    grid-column: 12 span;
+  }
+
   .will-suit::after {
     display: none;
   }
@@ -527,7 +850,8 @@
     width: 100%;
   }
 
-  .location-place__title {
+  .location-place__title,
+  .about__top-title {
     border-bottom: none;
     margin-bottom: 25px;
     padding-bottom: 0;
@@ -553,12 +877,14 @@
     margin-bottom: 60px;
   }
 
-  .hero-slider {
+  .hero-slider,
+  .schools-info {
     padding: 50px 0 50px;
     height: 500px;
   }
 
-  .hero-slider__title {
+  .hero-slider__title,
+  .schools-info__title {
     margin-bottom: 10px;
     font-size: 48px;
     line-height: 50px;
@@ -663,9 +989,159 @@
   .map-info__btns {
     flex-direction: column;
   }
+
+  .blog-list__item--parasites::before {
+    right: 0px;
+  }
+
+  .blog-list__item--dots::before {
+    bottom: -24px;
+    right: 16px;
+  }
 }
 
 @media (max-width: 576px) {
+  .instructions-and-guides__title {
+    padding-bottom: 0;
+    margin-bottom: 20px;
+  }
+  .instructions-and-guides__title::before {
+    display: none;
+  }
+  .traveling-with-dog__title {
+    padding-bottom: 0;
+  }
+
+  .traveling-with-dog__title::before {
+    display: none;
+  }
+
+  .blog-list__item--bagel::before {
+    width: 42px;
+    height: 49px;
+    top: -29px;
+  }
+
+  .how-get-pet__title {
+    padding-bottom: 0;
+  }
+
+  .how-get-pet__title::before {
+    display: none;
+  }
+
+  .health-care__title {
+    padding-bottom: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .info-page {
+    padding-top: 40px;
+  }
+
+  .dog-friend__title {
+    padding-bottom: 0;
+
+    &:before {
+      display: none;
+    }
+  }
+
+  .info-page__descr {
+    font-size: 16px;
+    line-height: 26px;
+  }
+
+  .blog-list__item--jellyfish::before {
+    display: none;
+  }
+
+  .life-with-a-dog {
+    padding-top: 40px;
+  }
+
+  .info-page__list {
+    margin-bottom: 60px;
+  }
+
+  .cart-item__title {
+    font-size: 26px;
+    margin-bottom: 17px;
+  }
+
+  .tabs__nav-btn {
+    padding: 18px 30px;
+    font-size: 18px;
+    line-height: 18px;
+  }
+
+  .residents__top,
+  .announcement,
+  .accardeon {
+    margin-bottom: 60px;
+  }
+
+  .accardeon__box {
+    max-width: 30px;
+  }
+
+  .accardeon__title {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  .residents {
+    padding-top: 20px;
+  }
+
+  .about-page {
+    padding-top: 20px;
+  }
+
+  .about__top-title::before {
+    display: none;
+  }
+
+  .residents__title {
+    padding-bottom: 0;
+  }
+
+  .residents__title::before {
+    display: none;
+  }
+
+  .about__top-text {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .materials__link {
+    padding: 10px 38px;
+    height: 50px;
+    width: 120px;
+  }
+
+  .materials {
+    padding: 25px;
+  }
+
+  .schools-info {
+    margin-bottom: 40px;
+  }
+
+  .useful-materials {
+    margin-bottom: 60px;
+  }
+
+  .contact-content__text span {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 0px;
+  }
+
   .advise-business__top {
     margin-bottom: 30px;
   }
@@ -675,7 +1151,8 @@
     line-height: 28px;
   }
 
-  .advise-list__text {
+  .advise-list__text,
+  .cart-item__title {
     font-size: 26px;
     line-height: 36px;
   }
@@ -825,6 +1302,7 @@
 
   .map-location {
     width: 100%;
+    padding-right: 8px;
   }
 
   .address {
@@ -847,7 +1325,7 @@
 
   .map-location .custom-checkbox__content::after,
   .map-location .custom-checkbox__content::before {
-    right: 10px;
+    right: 5px;
   }
 
   .map-location .custom-checkbox__img {
@@ -1063,6 +1541,10 @@
     margin-bottom: 15px;
   }
 
+  .info-page__top {
+    margin-bottom: 60px !important;
+  }
+
   .news-events,
   .will-suit,
   .free-cours,
@@ -1074,6 +1556,13 @@
     font-size: 32px;
     line-height: 42px;
     margin-bottom: 15px;
+  }
+
+  .schools-teachers .about__top-title {
+    font-size: 32px;
+    line-height: 42px;
+    margin-bottom: 15px;
+    width: 100%;
   }
 
   .header {
@@ -1088,21 +1577,26 @@
     font-size: 20px;
   }
 
-  .hero-slider__title::before {
+  .hero-slider__title::before,
+  .schools-info__title::before,
+  .schools-info__title::after {
     display: none;
   }
 
-  .hero-slider {
+  .hero-slider,
+  .schools-info {
     padding: 35px 0;
     height: 400px;
   }
 
-  .hero-slider__title {
+  .hero-slider__title,
+  .schools-info__title {
     font-size: 40px;
     line-height: 48px;
   }
 
-  .hero-slider__text {
+  .hero-slider__text,
+  .schools-info__descr {
     padding-bottom: 12px;
     font-size: 20px;
   }
@@ -1202,22 +1696,23 @@
   }
 
   .input-elem {
-    padding: 12px 10px;
+    padding: 16px 14px;
     font-size: 16px;
     line-height: 16px;
   }
 
-  .btn-link {
-    padding: 10px 20px;
-    line-height: 24px;
-    font-size: 14px;
-  }
+  // .btn-link {
+  //   padding: 10px 20px;
+  //   line-height: 24px;
+  //   font-size: 14px;
+  // }
 
   .custom-checkbox__content {
     font-size: 14px;
   }
 
-  .hero-slider {
+  .hero-slider,
+  .schools-info {
     padding: 30px 0;
     height: 340px;
   }
@@ -1231,7 +1726,8 @@
     display: none;
   }
 
-  .hero-slider__text {
+  .hero-slider__text,
+  .schools-info__descr {
     font-size: 14px;
     line-height: 22px;
   }
