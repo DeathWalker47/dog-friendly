@@ -4,6 +4,36 @@
       display: none;
     }
 
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -30%;
+      right: 3%;
+      background-image: url('../img/back-img-2.png');
+      z-index: -2;
+      width: 346px;
+      height: 355px;
+    }
+
+  }
+}
+
+.dog-friend-page {
+  .contact {
+
+    &::after {
+      display: none;
+    }
+
+  }
+}
+
+.education-page {
+  .contact {
+
+    &::after {
+      display: none;
+    }
 
   }
 }
@@ -43,7 +73,7 @@
     content: '';
     background-image: url('../../img/life-img-elem.png');
     background-repeat: no-repeat;
-    top: -9%;
+    top: -10%;
     left: 29%;
     z-index: -1;
     width: 830px;
@@ -329,7 +359,7 @@
     line-height: 26px;
     display: inline-block;
     margin-bottom: auto;
-    color:var(--black);
+    color: var(--black);
   }
 
   &__link {
@@ -445,7 +475,7 @@
     content: '';
     background-repeat: no-repeat;
     background-image: url('../../img/img-3.png');
-    top: 11%;
+    top: 3%;
     left: 4%;
     width: 826px;
     height: 2150px;
@@ -636,7 +666,8 @@
 
   &__image {
     max-width: 415px;
-    img{
+
+    img {
       height: 100%;
     }
   }

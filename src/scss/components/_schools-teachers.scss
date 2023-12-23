@@ -11,10 +11,14 @@
   }
 }
 
+.materials__link {
+  color:var(--text-color);
+  border-color: var(--text-color);
+}
 .schools-info {
   padding: 95px 0;
   margin-bottom: 80px;
-  min-height: 950px;
+  min-height: 756px;
   border-radius: var(--bor-rad);
   overflow: hidden;
   background-repeat: no-repeat;

@@ -84,7 +84,7 @@
       background-image: url("../img/about-elem-2.png");
       width: 145px;
       height: 123px;
-      top: 57%;
+      top: 59%;
       left: -35px;
     }
 
@@ -134,6 +134,22 @@
 
   &__btns {}
 }
+
+// .swiper-slide-active {
+//   .objective {
+//     &__link {
+//       background-color: var(--orange-color);
+
+//       .objective__text {
+//         color: var(--white);
+//       }
+
+//       svg {
+//         fill: var(--white);
+//       }
+//     }
+//   }
+// }
 
 .objectives-slider {
   margin-bottom: 128px;

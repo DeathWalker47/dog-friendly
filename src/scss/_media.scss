@@ -48,6 +48,10 @@
 }
 
 @media (max-width: 1300px) {
+  .nice-guest::before {
+    display: none;
+  }
+
   .useful-list__item {
     grid-column: 6 span;
   }
@@ -598,6 +602,9 @@
 }
 
 @media (max-width: 768px) {
+  .accardeon-box__title {
+    margin-bottom: 30px;
+  }
   .blog-list__item--crumbs::before {
     width: 60px;
     height: 39px;
@@ -1005,9 +1012,11 @@
     padding-bottom: 0;
     margin-bottom: 20px;
   }
+
   .instructions-and-guides__title::before {
     display: none;
   }
+
   .traveling-with-dog__title {
     padding-bottom: 0;
   }
