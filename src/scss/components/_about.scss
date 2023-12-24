@@ -158,28 +158,49 @@
 .objective {
   height: 100%;
 
-  &__link {
-    display: block;
-    height: 100%;
-    padding: 24px;
-    background-color: var(--white);
-    border-radius: var(--bor-rad);
-    overflow: hidden;
-    color: var(--dark);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  display: block;
+  height: 100%;
+  padding: 24px;
+  background-color: var(--white);
+  border-radius: var(--bor-rad);
+  overflow: hidden;
+  color: var(--dark);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 
-    &:hover {
-      background-color: var(--orange-color);
+  &:hover {
+    background-color: var(--orange-color);
 
-      .objective__text {
-        color: var(--white);
-      }
+    .objective__text {
+      color: var(--white);
+    }
 
-      svg {
-        fill: var(--white);
-      }
+    svg {
+      fill: var(--white);
     }
   }
+
+  // &__link {
+  //   display: block;
+  //   height: 100%;
+  //   padding: 24px;
+  //   background-color: var(--white);
+  //   border-radius: var(--bor-rad);
+  //   overflow: hidden;
+  //   color: var(--dark);
+  //   transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+
+  //   &:hover {
+  //     background-color: var(--orange-color);
+
+  //     .objective__text {
+  //       color: var(--white);
+  //     }
+
+  //     svg {
+  //       fill: var(--white);
+  //     }
+  //   }
+  // }
 
   &__img-box {
     max-width: 368px;
@@ -239,16 +260,16 @@
   &__title {
     position: relative;
     padding-bottom: 14px;
-    margin-bottom: 26px;
+    margin-bottom: 32px;
 
     &::before {
       position: absolute;
       content: "";
-      bottom: 0;
+      bottom: -6px;
       left: 0;
       width: 467px;
-      height: 14px;
-      background-image: url("../img/new-title-elem.png");
+      height: 16px;
+      background-image: url("../img/team-img-title.png");
       background-repeat: no-repeat;
     }
   }

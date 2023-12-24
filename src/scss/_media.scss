@@ -18,10 +18,7 @@
     min-height: auto;
   }
 
-  .schools-teachers .about::before {
-    top: 8%;
-    left: 0%;
-  }
+
 
   .news-section .contact::before {
     top: -126%;
@@ -113,6 +110,7 @@
     overflow: auto;
     transform: translateY(-100%);
     transition: transform 0.5s ease-in-out;
+    z-index: 3;
 
     &__list {
       height: 100%;
@@ -135,34 +133,53 @@
   }
 
   .nav__item--dropdown::before {
+    // width: 16px;
+    // height: 8px;
+    // top: 16px;
     display: none;
+  }
+
+  .nav__link-mobile {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 13px;
+      right: 0;
+      width: 16px;
+      height: 8px;
+      background-image: url('../img/menu-arr.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      opacity: 1;
+      transition: transform .3s ease-in-out;
+    }
+  }
+
+  .nav__link-mobile--one::before {
+    right: 28%;
+  }
+
+  .nav__link-mobile--two::before {
+    right: 7%;
+  }
+
+  .nav__link-mobile--open {
+    &::before {
+      transform: rotate(180deg);
+      transform-origin: center;
+    }
   }
 
   .nav__link {
     font-size: 30px;
   }
 
-  .nav__item--dropdown {
-    .nav__link {
-      &::before {
-        opacity: 0;
-        position: absolute;
-        content: "";
-        top: 10px;
-        right: 0;
-        width: 12px;
-        height: 6px;
-        background-image: url('../img/menu-arr.svg');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-      }
-    }
-  }
 
   .burger {
     display: block;
     margin-left: 30px;
+    z-index: 3;
   }
 
   .dropdown-menu {
@@ -171,6 +188,12 @@
     visibility: visible;
     top: 0;
     background-color: transparent;
+    max-height: 0;
+    will-change: max-height;
+    overflow: hidden;
+    box-sizing: content-box;
+    transition: max-height .2s linear;
+    padding: 0;
   }
 
   .dropdown-menu__link {
@@ -201,6 +224,10 @@
 }
 
 @media (max-width: 1200px) {
+  .cours-article__text .line::before {
+    display: none;
+  }
+
   .traveling-with-dog {
     .info-page__top {
       margin-bottom: 80px;
@@ -431,6 +458,10 @@
 }
 
 @media (max-width: 992px) {
+  .residents-list__item:nth-child(2)::before {
+    display: none;
+  }
+
   .cart-item__right-image {
     display: none;
   }
@@ -605,6 +636,7 @@
   .accardeon-box__title {
     margin-bottom: 30px;
   }
+
   .blog-list__item--crumbs::before {
     width: 60px;
     height: 39px;
@@ -1008,6 +1040,19 @@
 }
 
 @media (max-width: 576px) {
+  .dropdown-menu {
+    max-width: 280px;
+    width: 100%;
+  }
+
+  .nav__link-mobile--one::before {
+    right: 10%;
+  }
+
+  .location-place__title::before {
+    display: none;
+  }
+
   .instructions-and-guides__title {
     padding-bottom: 0;
     margin-bottom: 20px;

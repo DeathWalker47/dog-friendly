@@ -1,6 +1,6 @@
 import 'simplebar';
 import SmoothScroll from 'smooth-scroll';
-const scroll = new SmoothScroll('a[href*="#"]', {
+const scroll = new SmoothScroll('a[href="#contact"]', {
   speed: 800,
   speedAsDuration: true,
   easing: 'linear',

@@ -1,5 +1,6 @@
 .entrepreneurs {
   position: relative;
+  padding-top: 20px;
 
   &::before {
     position: absolute;
@@ -191,6 +192,8 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-radius:var(--bor-rad);
+    overflow: hidden
   }
 }
 
@@ -210,10 +213,10 @@
       position: absolute;
       content: "";
       background-image: url("../img/duble-line-title-2.png");
-      width: 516px;
+      width: 520px;
       height: 20px;
       background-repeat: no-repeat;
-      bottom: 0;
+      bottom: -4px;
       left: 0;
     }
   }

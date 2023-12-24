@@ -60,7 +60,7 @@
       position: absolute;
       content: "";
       bottom: -234px;
-      right: 0;
+      right: -50px;
       background-image: url('../img/back-img-2.png');
       z-index: -1;
       width: 346px;
@@ -273,7 +273,7 @@
       &::before {
         position: absolute;
         content: "";
-        top: 40px;
+        top: 0px;
         left: -465px;
         background-image: url('../img/back-img-2.png');
         z-index: -1;
