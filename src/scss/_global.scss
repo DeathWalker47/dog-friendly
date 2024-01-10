@@ -52,7 +52,12 @@ html {
   padding: 0 15px;
   margin: 0 auto;
 }
+.container-contant {
+  max-width: 1470px;
+  padding: 0 15px;
+  margin: 0 auto;
 
+}
 .title-page {
   position: relative;
   @extend %mul-800;

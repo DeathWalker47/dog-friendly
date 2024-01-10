@@ -330,9 +330,11 @@ const deploy = () => {
     base: "./app",
     buffer: false,
   })
-    .pipe(conn.newer("/fizer00mai/sfizer_ru/public_html/")) // only upload newer files
-    .pipe(conn.dest("/fizer00mai/sfizer_ru/public_html/"));
+    .pipe(conn.newer("/test-project/public_html/")) // only upload newer files
+    .pipe(conn.dest("/test-project/public_html/"));
 };
 
 
 exports.deploy = deploy;
+
+

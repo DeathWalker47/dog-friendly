@@ -110,8 +110,11 @@
   @include custom-checkbox;
 
   &__field {
-    &:checked+.custom-checkbox__content::after {
+    &:checked+.custom-checkbox__content::before {
       background-color: var(--bright-yellow);
+    }
+    &:checked+.custom-checkbox__content::after {
+      // background-color: var(--bright-yellow);
     }
   }
 
@@ -127,10 +130,11 @@
     }
 
     &::after {
-      background-image: url("../img/chek.png");
+      background-image: url("../../img/Checkbox.png");
       background-size: 12px 8px;
       background-repeat: no-repeat;
       width: 20px;
+      background-size: contain;
       height: 20px;
       top: 4px;
       border-radius: 6px;

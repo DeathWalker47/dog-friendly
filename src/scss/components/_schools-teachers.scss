@@ -16,7 +16,7 @@
   border-color: var(--text-color);
 }
 .schools-info {
-  padding: 95px 0;
+  padding: 95px 72px;
   margin-bottom: 80px;
   min-height: 756px;
   border-radius: var(--bor-rad);
@@ -147,6 +147,7 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
+  overflow: hidden;
   height: 308px;
   padding: 40px;
   background-color: var(--white);
